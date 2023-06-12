@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>호텔엔조이 - 상세검색</title>
+  <meta name="description" content="">
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+<!-- favicon.ico in the root directory -->
+<link rel="apple-touch-icon" href="favicon.ico">
+
+<meta name="theme-color" content="#3d55dc">
+
+<!-- owl carousel -->
+<link rel="stylesheet" href="../css/owl.carousel.min.css">
+<link rel="stylesheet" href="../css/owl.theme.default.min.css">
+<!-- Fantasy -->
+<link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+<link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- owl carousel -->
+<script src="../js/owl.carousel.min.js"></script>
+<!--Video.js -->
+<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+
+<link href=".././css/styles.css?49a85ad49723ea7f9956" rel="stylesheet"></head>
+
+<body>
+
+  <!--[if IE]>
+<div class="p-3 bg-light">
+  <div class="container">
+    <p class="mb-0 browserupgrade">
+      You are using an <strong>outdated</strong> browser.
+      Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+    </p>
+  </div>
+</div>
+<![endif]-->
+
+
+  <div class="d-flex flex-column">
+
+    <main class="d-flex h-100 flex-column ui-header-tab">
+
+      <header class="container-fluid head-wrap fixed-top border-bottom">
+        <h1 class="heading-close mb-0">상세 검색</h1>
+        <button class="btn btn-sm button-close">
+          <i class="icon icon-close icon-ml"></i>
+          <span class="sr-only">닫기</span>
+        </button>
+      </header>
+
+      <section class="container-fluid px-0 fixed-tab">
+        <section class="container tab-full">
+          <ul class="tab-list nav nav-tabs" id="searchTab" role="tablist">
+            <li>
+              <a href="#local" class="active" id="local-tab" data-toggle="tab" role="tab" aria-controls="local" aria-selected="true">국내</a>
+            </li>
+            <li>
+              <a href="#oversea" class="" id="oversea-tab" data-toggle="tab" role="tab" aria-controls="oversea" aria-selected="false">해외</a>
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="container-fluid px-0 mt-4">
+        <div class="container tab-content">
+          <!-- tab 국내 -->
+          <div class="tab-pane fade show active" id="local" role="tabpanel" aria-labelledby="local-tab">
+            <!-- 국내 검색 -->
+            <form class="search-quick">
+              <div class="row">
+                <div class="col-13 pr-1 search-input">
+                  <label for="localKeyword" class="sr-only">지역 또는 숙소명 검색</label>
+                  <i class="icon icon-search icon-heading"></i>
+                  <input type="text" class="form-control form-control-xl bg-ws keyword-input" id="localKeyword" placeholder="지역 숙소명을 모두 검색해 보세요">
+                  <i class="icon icon-innerclose icon-heading" style="display: none;"></i>
+                </div>
+                <div class="col-3 pl-1">
+                  <button class="btn btn-block btn-closer">
+                    <i class="icon icon-closer icon-sm icon-gb"></i>
+                    내주변
+                  </button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-8">
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-8">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </form>
+
+            <section class="dropdown-wrapper mt-4">
+              <ul class="list-dropdown">
+                <li>
+                  <a href="#;">인기지역</a>
+                  <ul class="list-child">
+                    <li>
+                      <a href="#;">서울 강남/송파/서초</a>
+                    </li>
+                    <li>
+                      <a href="#;">서울 명동/동대문/종로</a>
+                    </li>
+                    <li>
+                      <a href="#;">서울 강남/송파/서초</a>
+                    </li>
+                    <li>
+                      <a href="#;">서울 강남/송파/서초</a>
+                    </li>
+                    <li>
+                      <a href="#;">부산 해운대/광안리/서면</a>
+                    </li>
+                    <li>
+                      <a href="#;">제주 서귀포/제주시</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#;">서울</a>
+                  <ul class="list-child">
+                    <li>
+                      <a href="#;">서울2 강남/송파/서초</a>
+                    </li>
+                    <li>
+                      <a href="#;">서울2 명동/동대문/종로</a>
+                    </li>
+                    <li>
+                      <a href="#;">서울 강남/송파/서초</a>
+                    </li>
+                    <li>
+                      <a href="#;">서울 강남/송파/서초</a>
+                    </li>
+                    <li>
+                      <a href="#;">부산 해운대/광안리/서면</a>
+                    </li>
+                    <li>
+                      <a href="#;">제주 서귀포/제주시</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#;">부산</a>
+                </li>
+                <li>
+                  <a href="#;">제주</a>
+                </li>
+                <li>
+                  <a href="#;">경기</a>
+                </li>
+                <li>
+                  <a href="#;">인천</a>
+                </li>
+                <li>
+                  <a href="#;">강원</a>
+                </li>
+                <li>
+                  <a href="#;">경상</a>
+                </li>
+                <li>
+                  <a href="#;">전라</a>
+                </li>
+                <li>
+                  <a href="#;">충청</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <!-- tab 해외 -->
+          <div class="tab-pane fade" id="oversea" role="tabpanel" aria-labelledby="oversea-tab">
+            <!-- 해외 검색 -->
+            <form class="search-quick">
+              <div class="row">
+                <div class="col-13 pr-1 position-relative">
+                  <label for="overseaKeyword" class="sr-only">지역 또는 숙소명 검색</label>
+                  <i class="icon icon-search icon-heading"></i>
+                  <input type="text" class="form-control" id="overseaKeyword" placeholder="지역 숙소명을 모두 검색해 보세요">
+                  <i class="icon icon-innerclose icon-heading" style="display: none;"></i>
+                </div>
+                <div class="col-3 pl-1">
+                  <button class="btn btn-block btn-closer">
+                    <i class="icon icon-closer icon-sm icon-gb"></i>
+                    내주변
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <section class="dropdown-wrapper mt-4">
+              <ul class="list-dropdown">
+                <li>
+                  <a href="#;">인기지역</a>
+                  <ul class="list-child">
+                    <li>
+                      <a href="#;">미국 강남/송파/서초</a>
+                    </li>
+                    <li>
+                      <a href="#;">동남아 명동/동대문/종로</a>
+                    </li>
+                    <li>
+                      <a href="#;">유럽 강남/송파/서초</a>
+                    </li>
+                    <li>
+                      <a href="#;">아시아 강남/송파/서초</a>
+                    </li>
+                    <li>
+                      <a href="#;">부산 해운대/광안리/서면</a>
+                    </li>
+                    <li>
+                      <a href="#;">제주 서귀포/제주시</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#;">동남아</a>
+                  <ul class="list-child">
+                    <li>
+                      <a href="#;">미국 강남/송파/서초</a>
+                    </li>
+                    <li>
+                      <a href="#;">동남아 명동/동대문/종로</a>
+                    </li>
+                    <li>
+                      <a href="#;">유럽 강남/송파/서초</a>
+                    </li>
+                    <li>
+                      <a href="#;">아시아 강남/송파/서초</a>
+                    </li>
+                    <li>
+                      <a href="#;">부산 해운대/광안리/서면</a>
+                    </li>
+                    <li>
+                      <a href="#;">제주 서귀포/제주시</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#;">유럽</a>
+                </li>
+                <li>
+                  <a href="#;">미국</a>
+                </li>
+                <li>
+                  <a href="#;">남미</a>
+                </li>
+                <li>
+                  <a href="#;">서아시아</a>
+                </li>
+                <li>
+                  <a href="#;">오세아니아</a>
+                </li>
+                <li>
+                  <a href="#;">경상</a>
+                </li>
+                <li>
+                  <a href="#;">전라</a>
+                </li>
+                <li>
+                  <a href="#;">충청</a>
+                </li>
+              </ul>
+            </section>
+
+          </div>
+        </div>
+        <div class="container mt-4 mb-3">
+          <button class="btn btn-mxl btn-block btn-success">검색하기</button>
+        </div>
+      </section>
+
+      <hr class="divider-h">
+
+      <section class="container mt-3">
+        <h3 class="heading-4">인기검색</h3>
+        <div class="tag-wrapper">
+          <a href="#;" class="tag">#바닷가호텔</a>
+          <a href="#;" class="tag">#쿠폰할인</a>
+          <a href="#;" class="tag">#강화도펜션</a>
+          <a href="#;" class="tag">#커플펜션</a>
+          <a href="#;" class="tag">#한옥스테이</a>
+          <a href="#;" class="tag">#수영장호텔</a>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- Modal modal-dialog 에 custom class 적용 (ex: modal-full )-->
+  <div class="modal fade show" id="purposePopup" tabindex="-1" aria-labelledby="purposePopupLabel" aria-hidden="true">
+    <div class="modal-dialog modal-full">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="purposePopupLabel">이용목적</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="닫기">
+            <i class="icon icon-close icon-ml"></i>
+          </button>
+        </div>
+        <div class="modal-body py-3">
+          <div class="button-radio">
+            <input type="radio" name="purposeOption" id="opt1" checked>
+            <label for="opt1">비즈니스/출장</label>
+          </div>
+          <div class="button-radio">
+            <input type="radio" name="purposeOption" id="opt2">
+            <label for="opt2">친구/커플여행</label>
+          </div>
+          <div class="button-radio">
+            <input type="radio" name="purposeOption" id="opt3">
+            <label for="opt3">가족여행</label>
+          </div>
+          <div class="button-radio">
+            <input type="radio" name="purposeOption" id="opt4">
+            <label for="opt4">허니문</label>
+          </div>
+          <div class="button-radio">
+            <input type="radio" name="purposeOption" id="opt5">
+            <label for="opt5">나홀로여행</label>
+          </div>
+          <div class="button-radio">
+            <input type="radio" name="purposeOption" id="opt6">
+            <label for="opt6">기타</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-ml btn-grey btn-block bold" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    //--- Tabs - Following border animation
+    var w = Math.round($(".tab-list li a.active").width());
+    console.log(w);
+    var initPos = $(".tab-list a.active").parent('li').position();
+    $("head").append('<style id="append-style">.tab-list:after{width:' + w + 'px; left: ' + initPos.left + 'px;}</style>');
+
+    // window resize support
+    var resizeTimer;
+    $(window).on('resize', function (e) {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function () {
+        w = Math.round($(".tab-list li").width());
+        initPos = $(".tab-list a.active").parent('li').position();
+        $("head").find('#append-style').remove();
+        $("head").append('<style id="append-style">.tab-list:after{width:' + w + 'px; left: ' + initPos.left + 'px;}</style>');
+      }, 250);
+    });
+    // tab active
+    $(".tab-list li").on('click', function () {
+      var pos = $(this).position();
+      var w = Math.round($(this).children("li a.active").width());
+      $("head").find('#append-style').remove();
+      $(".tab-list li a").removeClass('active');
+      $("head").append('<style id="append-style">.tab-list:after{width:' + w + 'px; left: ' + pos.left + 'px;}</style>');
+      $(this).children('a').addClass('active');
+    });
+
+    // BS tab action
+    $('#searchTab a').on('click', function (event) {
+      event.preventDefault()
+      $(this).tab('show')
+    })
+
+    // searchKeyword deletion 
+    $('#searchKeyword').on('keyup', function () {
+      var keyVal = $(this).val();
+      if (keyVal) {
+        $(this).next('.icon-innerclose').show();
+      } else {
+        $(this).next('.icon-innerclose').hide();
+      }
+      $('.icon-innerclose').on('click', function () {
+        $('#searchKeyword').val('').focus();
+        $(this).hide();
+      })
+    })
+
+    // Custom List Collapse
+    $('.list-dropdown > li a').on('click', function () {
+      // $('.list-dropdown > li a').removeClass('active');
+      $(this).toggleClass('active').parent().siblings('li').children('a').removeClass('active');
+    })
+  </script>
+<script src=".././js/index.bundle.js?49a85ad49723ea7f9956"></script></body>
+
+</html>

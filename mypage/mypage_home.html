@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>호텔엔조이</title>
+  <meta name="description" content="">
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+<!-- favicon.ico in the root directory -->
+<link rel="apple-touch-icon" href="favicon.ico">
+
+<meta name="theme-color" content="#3d55dc">
+
+<!-- owl carousel -->
+<link rel="stylesheet" href="../css/owl.carousel.min.css">
+<link rel="stylesheet" href="../css/owl.theme.default.min.css">
+<!-- Fantasy -->
+<link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+<link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- owl carousel -->
+<script src="../js/owl.carousel.min.js"></script>
+<!--Video.js -->
+<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+
+<link href=".././css/styles.css?49a85ad49723ea7f9956" rel="stylesheet"></head>
+
+<body>
+
+  <!--[if IE]>
+<div class="p-3 bg-light">
+  <div class="container">
+    <p class="mb-0 browserupgrade">
+      You are using an <strong>outdated</strong> browser.
+      Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+    </p>
+  </div>
+</div>
+<![endif]-->
+
+
+  <div class="d-flex flex-column">
+
+    <header class="header header-title fixed-top border-bottom">
+  <div class="container px-0">
+    <nav class="navbar">
+      <div>
+        <a href="/index.html" class="btn">
+          <i class="icon icon-back icon-md"></i>
+          <span class="sr-only">뒤로가기</span>
+        </a>
+        <h1>마이페이지</h1>
+      </div>
+      <div>
+        <a href="#;" class="nav-link pr-1">설정</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+    <main class="d-flex h-100 flex-column ui-header ui-nav">
+
+      <section class="container mt-4 mypage-head">
+        <div class="row">
+          <div class="col-10 d-flex align-items-center">
+            <!-- 등급별 badge class 적용 :  
+              -엔조이: .enjoy
+              -카카오: .kakao
+              -네이버: .naver
+              -페북: .fb
+             -->
+            <div class="badge-circle enjoy">VIP</div>
+            <div class="ml-3">
+              <h2 class="heading heading-bold mb-0">엔조이</h2>
+              <span class="my-email">texst@naver.com</span>
+            </div>
+          </div>
+          <div class="col-6 text-right">
+            <button class="btn btn-round">내정보 수정</button>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-16">
+            <ul class="list-group list-group-horizontal point-info">
+              <li>
+                <b class="text-dark">10</b>
+                <p>쿠폰</p>
+              </li>
+              <li>
+                <b class="text-primary">12,000</b>
+                <p>포인트</p>
+              </li>
+              <li>
+                <b class="text-periwinkle">90,000</b>
+                <p>캐쉬상품권</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 쿠폰 등급별 쿠폰 배너 배경색 class: 
+        -엔조이: .banner-enjoy
+        -카카오: .banner-kakao
+        -네이버: .banner-naver
+        -페북: .banner-fb
+       -->
+      <section class="container mt-4">
+        <a href="#;" class="container banner banner-enjoy coupon" style="background-image: url('../images/coupon1@2x.png');">
+          <div class="coupon-body">
+            <b class="coupon-title">멤버쉽 가입</b>
+            <p class="mt-2">멤버쉽 가입시 5,000P 지급</p>
+            <span class="coupon-date"></span>
+          </div>
+        </a>
+      </section>
+
+      <hr class="divider-h my-3">
+
+      <section class="container mt-3">
+        <h2 class="heading heading-sb">예약정보</h2>
+        <ul class="list-group list-group-flush status">
+          <li class="list-group-item">
+            <a href="#;">
+              <p><i class="icon icon-copy icon-md icon-wg"></i> 국내숙소</p>
+              <span class="num">
+                <b>99</b>건
+              </span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#;">
+              <p><i class="icon icon-flight icon-md icon-wg"></i> 해외숙소</p>
+              <span class="num">
+                <b>99</b>건
+              </span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#;">
+              <p><i class="icon icon-cancel icon-md icon-wg"></i> 예약취소</p>
+              <span class="num">
+                <b>99</b>건
+              </span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="container mt-5">
+        <h2 class="heading heading-sb">숙소관리</h2>
+        <ul class="list-group list-group-flush status">
+          <li class="list-group-item">
+            <a href="#;">
+              <p><i class="icon icon-calendar-check icon-md icon-wg"></i> 최근 본 숙소</p>
+              <span class="icon icon-arrow icon-xs"></span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#;">
+              <p><i class="icon icon-like icon-ml icon-wg"></i> 관심숙소</p>
+              <span class="icon icon-arrow icon-xs"></span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="container mt-5">
+        <h2 class="heading heading-sb">캐쉬 상품권</h2>
+        <ul class="list-group list-group-flush status">
+          <li class="list-group-item">
+            <a href="#;">
+              <p><i class="icon icon-coin icon-ml icon-wg"></i> 캐쉬상품권 등록</p>
+              <span class="icon icon-arrow icon-xs"></span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#;">
+              <p><i class="icon icon-gift icon-md icon-wg"></i> 상품권 구매내역</p>
+              <span class="icon icon-arrow icon-xs"></span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="container mt-5">
+        <h2 class="heading heading-sb">엔조이</h2>
+        <ul class="list-group list-group-flush status">
+          <li class="list-group-item">
+            <a href="#;">
+              <p>공지사항</p>
+              <span class="icon icon-arrow icon-xs"></span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#;">
+              <p>자주묻는 질문</p>
+              <span class="icon icon-arrow icon-xs"></span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#;">
+              <p>1:1 문의</p>
+              <span class="icon icon-arrow icon-xs"></span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#;">
+              <p>내가 쓴 후기</p>
+              <span class="icon icon-arrow icon-xs"></span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#;">
+              <p>재휴/비즈니스 문의</p>
+              <span class="icon icon-arrow icon-xs"></span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="container my-5">
+        <a href="#;" class="banner-info">
+          <h3 class="heading heading-4 mb-0">고객센터</h3>
+          <i class="icon icon-call icon-gb icon-md"></i>
+        </a>
+      </section>
+
+      <!-- 무엇이든 물어보세요 -->
+      <section class="container-fluid footer-qa">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-16 px-0 px-sm-3 text-center">
+              <h4 class="heading heading-sb">무엇이든 물어보세요!</h4>
+              <p class="content">저희 고객지원팀이 친절하고 빠르게 답변드립니다.</p>
+              <div class="on-time">
+                <p>월 ~ 금 09 : 00 ~ 18 : 00</p>
+                <p>토요일 & 일요일 & 공휴일: 휴무</p>
+                <blockquote>(점심시간 11 : 30 ~ 13 : 00)</blockquote>
+              </div>
+              <button class="btn btn-lg btn-block btn-kakao">
+                <i class="icon icon-kakao icon-md"></i>
+                카카오 1:1 상담 문의하기
+              </button>
+            </div>
+            <div class="col-16 px-0 px-sm-3 mt-4 text-right">
+              <button class="btn btn-sm btn-light move-top">
+                <i class="arrow arrow-up arrow-bold arrow-black"></i>
+                <span>맨위로</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer fixed-bottom">
+  <div class="container py-3">
+    <ul class="nav">
+      <li>
+        <a href="#" class="active">
+          <i class="icon icon-nav icon-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-location"></i>
+          <span>내주변</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-wish"></i>
+          <span>관심숙소</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-mypage"></i>
+          <span>마이페이지</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-kakao"></i>
+          <span>카카오상담</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+  </div>
+
+  <script>
+    // 상단으로 이동
+    $('.move-top').on('click', function () {
+      $('html, body').animate({ scrollTop: 0 }, 500);
+      return false;
+    })
+  </script>
+<script src=".././js/index.bundle.js?49a85ad49723ea7f9956"></script></body>
+
+</html>

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>호텔엔조이</title>
+  <meta name="description" content="">
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+<!-- favicon.ico in the root directory -->
+<link rel="apple-touch-icon" href="favicon.ico">
+
+<meta name="theme-color" content="#3d55dc">
+
+<!-- owl carousel -->
+<link rel="stylesheet" href="../css/owl.carousel.min.css">
+<link rel="stylesheet" href="../css/owl.theme.default.min.css">
+<!-- Fantasy -->
+<link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+<link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- owl carousel -->
+<script src="../js/owl.carousel.min.js"></script>
+<!--Video.js -->
+<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+
+<link href=".././css/styles.css?49a85ad49723ea7f9956" rel="stylesheet"></head>
+
+<body>
+
+  <!--[if IE]>
+<div class="p-3 bg-light">
+  <div class="container">
+    <p class="mb-0 browserupgrade">
+      You are using an <strong>outdated</strong> browser.
+      Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+    </p>
+  </div>
+</div>
+<![endif]-->
+
+
+  <div class="d-flex flex-column h-100">
+
+    <header class="header header-title fixed-top border-bottom">
+  <div class="container px-0">
+    <nav class="navbar">
+      <div>
+        <a href="/index.html" class="btn">
+          <i class="icon icon-back icon-md"></i>
+          <span class="sr-only">뒤로가기</span>
+        </a>
+        <h1>호텔/리조트</h1>
+      </div>
+      <div>
+        <a href="#;" class="btn">
+          <i class="icon icon-house icon-nav icon-gb"></i>
+          <span class="sr-only">홈</span>
+        </a>
+        <a href="#;" class="btn">
+          <i class="icon icon-location icon-nav icon-gb"></i>
+          <span class="sr-only">지도보기</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+    <!-- 검색 & tabs -->
+    <header class="container-fluid px-0 search-category">
+      <section class="container">
+        <div class="row search-form">
+          <div class="col-8 pr-1">
+            <div class="input-group">
+              <label for="locate" class="sr-only">지역</label>
+              <i class="icon icon-pin icon-md"></i>
+              <input type="text" class="form-control form-control-sp" id="locate" placeholder="지역">
+            </div>
+          </div>
+          <div class="col-8 pl-1">
+            <div class="input-group">
+              <label for="range" class="sr-only">기간</label>
+              <i class="icon icon-calendar icon-md"></i>
+              <input type="text" class="form-control form-control-sp" id="range" placeholder="기간/인원">
+              <label for="peopleNum" class="sr-only">인원</label>
+              <input type="text" class="form-control form-control-sp peoplenum pr-0" id="peopleNum" value="99명" readonly>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-16">
+            <div class="scroll-tab">
+              <button class="btn">
+                <i class="icon icon-arrow"></i>
+                <span class="sr-only">더보기</span>
+              </button>
+              <ul class="list-scroll-h">
+                <li class="active">
+                  <a href="#;">추천순</a>
+                </li>
+                <li>
+                  <a href="#;">랭킹순위</a>
+                </li>
+                <li>
+                  <a href="#;">타임세일</a>
+                </li>
+                <li>
+                  <a href="#;">데이유즈</a>
+                </li>
+                <li>
+                  <a href="#;">타임세일</a>
+                </li>
+                <li>
+                  <a href="#;">데이유즈</a>
+                </li>
+              </ul>
+              <button class="btn">
+                <i class="icon icon-arrow"></i>
+                <span class="sr-only">더보기</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="d-flex flex-column ui-nav ui-nav-search">
+
+      <section class="container px-0 px-sm-3">
+        <!-- 카테고리 타이틀 -->
+        <div class="container category-head" id="stickyHead1">
+          <div class="row">
+            <h3 class="col-14">투데이 포커스</h3>
+            <div class="col-2 ad-append">AD</div>
+          </div>
+        </div>
+
+        <article class="card card-search">
+          <div class="slide-wrapper">
+            <div class="owl-carousel owl-theme aspect-16x9" id="itemResult1">
+              <!-- 럭스티지일 경우 ribbon * 클래스 적용 -->
+              <div class="item ribbon ribbon-luxtige">
+                <!-- 동영상 -->
+                <video id="top-video" class="video-js vjs-theme-fantasy vjs-big-play-centered" controls disablePictureInPicture preload="auto" poster="../images/search.png" data-setup="{}">
+                  <source src="/mov/example_1920.mp4" type="video/mp4" />
+                  <source src="/mov/example_640.webm" type="video/webm" />
+                  <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+              </div>
+              <div class="item">
+                <!-- 이미지 -->
+                <article class="item-thumb" style="background-image: url('../images/room1.jpg')"></article>
+              </div>
+            </div>
+            <a href="/index.html" class="vr-button"></a>
+            <button class="icon icon-like icon-white"></button>
+            <div class="text-bg text-bg-round">5객실 남음</div>
+          </div>
+          <!-- <img src="../images/search.png" srcset="../images/search@2x.png 1000w, ../images/search@3x.png 2000w" alt="상품사진" /> -->
+          <div class="card-body">
+            <section class="container">
+              <div class="row">
+                <div class="col-8">
+                  <div class="badge badge-custom badge-custom-grade">
+                    <span>5성급</span>
+                  </div>
+                </div>
+                <div class="col-8 d-flex justify-content-end">
+                  <div class="rate">
+                    <span class="icon icon-rate icon-starrate on"></span>
+                    <span class="rate-info">최고 <b>4.3</b></span>
+                    <span> (120)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-16 position-relative">
+                  <h1 class="heading heading-bold mb-1">[제주] 메리어트관 제주신화월드 호텔앤리조트</h1>
+                  <span class="address">중구 | 동대문역사문화공원역 도보 5분</span>
+                  <div class="price-wrap">
+                    <div class="badge badge-custom badge-custom-dayuse">
+                      <span>데이유즈</span>
+                    </div>
+                    <span class="price">1,969,000<small>원</small></span>
+                    <p>
+                      <s class="price-old">149,000<small>원</small></s>
+                    </p>
+                    <p class="price-coupon">
+                      숙박 <span class="coupon">쿠폰할인가</span>
+                      <span class="price">1,969,000<small>원</small></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <hr class="divider-h mb-3">
+
+        <!-- Banner -->
+        <div class="container px-0 mb-3 banner">
+          <div class="row mx-0">
+            <a href="#" class="col-16 px-0">
+              <img src="../images/banner3.png" srcset="../images/banner3@2x.png 1000w, ../images/banner3@3x.png 2000w" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <article class="card card-search">
+          <div class="slide-wrapper">
+            <div class="owl-carousel owl-theme aspect-16x9" id="itemResult2">
+              <!-- 럭스티지일 경우 아래 item에 ribbon ribbon-luxtige 클래스 적용 -->
+              <div class="item">
+                <!-- 동영상 -->
+                <video id="top-video" class="video-js vjs-theme-fantasy vjs-big-play-centered" controls disablePictureInPicture preload="auto" poster="../images/search.png" data-setup="{}">
+                  <source src="/mov/example_1920.mp4" type="video/mp4" />
+                  <source src="/mov/example_640.webm" type="video/webm" />
+                  <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+                <a href="/index.html" class="vr-button"></a>
+                <button class="icon icon-like icon-white"></button>
+              </div>
+              <div class="item">
+                <!-- 이미지 -->
+                <article class="item-thumb" style="background-image: url('../images/room1.jpg')"></article>
+              </div>
+            </div>
+            <div class="text-bg text-bg-round">5객실 남음</div>
+          </div>
+          <!-- <img src="../images/search.png" srcset="../images/search@2x.png 1000w, ../images/search@3x.png 2000w" alt="상품사진" /> -->
+          <div class="card-body">
+            <section class="container">
+              <div class="row">
+                <div class="col-8 flex-row">
+                  <div class="btn-group">
+                    <div class="badge badge-custom badge-custom-grade">
+                      <span>5성급</span>
+                    </div>
+                    <div class="badge badge-custom badge-custom-timesale">
+                      <i class="icon icon-timesale icon-white icon-sm"></i>
+                      <span>타임세일</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-8 d-flex justify-content-end">
+                  <div class="rate">
+                    <span class="icon icon-rate icon-starrate on"></span>
+                    <span class="rate-info">최고 <b>4.3</b></span>
+                    <span> (120)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-16 position-relative">
+                  <h1 class="heading heading-bold mb-1">베이튼 서울 동대문</h1>
+                  <span class="address">중구 | 동대문역사문화공원역 도보 5분</span>
+                  <div class="price-wrap">
+                    <p class="price bold mt-4">SOLD OUT</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <hr class="divider-h mt-3 mb-0">
+      </section>
+
+      <section class="container px-0 px-sm-3">
+        <!-- 카테고리 타이틀 인기순 -->
+        <div class="container category-head" id="stickyHead2">
+          <div class="row">
+            <h3 class="col-16">인기순</h3>
+          </div>
+        </div>
+
+        <article class="card card-search">
+          <div class="row no-gutters">
+            <div class="col-5 col-md-4">
+              <div class="thumb" style="background-image: url('../images/search1.png')">
+                <button class="icon icon-like icon-white"></button>
+              </div>
+            </div>
+            <div class="col-11 col-md-12">
+              <div class="card-body p-4">
+                <div class="btn-group mb-3">
+                  <div class="badge badge-custom badge-custom-grade">
+                    <span>5성급</span>
+                  </div>
+                  <div class="badge badge-custom badge-custom-timesale">
+                    <i class="icon icon-timesale icon-white icon-sm"></i>
+                    <span>타임세일</span>
+                  </div>
+                </div>
+                <h1 class="heading heading-bold mb-1 strcut">베이튼 서울 동대문</h1>
+                <span class="address">중구 | 동대문역사문화공원역 도보 5분</span>
+                <div class="rate">
+                  <span class="icon icon-rate icon-starrate on"></span>
+                  <span class="rate-info">최고 <b>4.3</b></span>
+                  <span> (120)</span>
+                </div>
+                <div class="price-wrap">
+                  <div class="badge badge-custom badge-custom-dayuse">
+                    <span>데이유즈</span>
+                  </div>
+                  <span class="price">1,969,000<small>원</small></span>
+                  <p>
+                    <s class="price-old">149,000<small>원</small></s>
+                  </p>
+                  <p class="price-coupon">
+                    숙박 <span class="coupon">쿠폰할인가</span>
+                    <span class="price">1,969,000<small>원</small></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <hr class="divider-h m-0">
+
+        <article class="card card-search">
+          <div class="row no-gutters">
+            <div class="col-5 col-md-4">
+              <div class="thumb" style="background-image: url('../images/search2.png')">
+                <button class="icon icon-like icon-white"></button>
+                <a href="#" class="vjs-big-play-button"></a>
+                <div class="text-bg text-bg-round">5객실 남음</div>
+              </div>
+            </div>
+            <div class="col-11 col-md-12">
+              <div class="card-body p-4">
+                <div class="btn-group mb-3">
+                  <div class="badge badge-custom badge-custom-grade">
+                    <span>5성급</span>
+                  </div>
+                  <div class="badge badge-custom badge-custom-motel">
+                    <span>데이유즈</span>
+                  </div>
+                  <div class="badge badge-custom badge-custom-timesale">
+                    <i class="icon icon-timesale icon-white icon-sm"></i>
+                    <span>타임세일</span>
+                  </div>
+                </div>
+                <h1 class="heading heading-bold mb-1 strcut">베이튼 서울 동대문</h1>
+                <span class="address">중구 | 동대문역사문화공원역 도보 5분</span>
+                <div class="rate">
+                  <span class="icon icon-rate icon-starrate on"></span>
+                  <span class="rate-info">최고 <b>4.3</b></span>
+                  <span> (120)</span>
+                </div>
+                <div class="price-wrap">
+                  <div class="badge badge-custom badge-custom-dayuse">
+                    <span>데이유즈</span>
+                  </div>
+                  <span class="price">1,969,000<small>원</small></span>
+                  <p>
+                    <s class="price-old">149,000<small>원</small></s>
+                  </p>
+                  <p class="price-coupon">
+                    숙박 <span class="coupon">쿠폰할인가</span>
+                    <span class="price">1,969,000<small>원</small></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <hr class="divider-h m-0">
+
+        <article class="card card-search">
+          <div class="row no-gutters">
+            <div class="col-5 col-md-4">
+              <div class="thumb" style="background-image: url('../images/search3.png')">
+                <button class="icon icon-like icon-white"></button>
+              </div>
+            </div>
+            <div class="col-11 col-md-12">
+              <div class="card-body p-4">
+                <div class="btn-group mb-3">
+                  <div class="badge badge-custom badge-custom-grade">
+                    <span>5성급</span>
+                  </div>
+                </div>
+                <h1 class="heading heading-bold mb-1 strcut">베이튼 서울 동대문</h1>
+                <span class="address">중구 | 동대문역사문화공원역 도보 5분</span>
+                <div class="rate">
+                  <span class="icon icon-rate icon-starrate on"></span>
+                  <span class="rate-info">최고 <b>4.3</b></span>
+                  <span> (120)</span>
+                </div>
+                <div class="price-wrap">
+                  <div class="badge badge-custom badge-custom-dayuse">
+                    <span>데이유즈</span>
+                  </div>
+                  <span class="price">1,969,000<small>원</small></span>
+                  <p>
+                    <s class="price-old">149,000<small>원</small></s>
+                  </p>
+                  <p class="price-coupon">
+                    숙박 <span class="coupon">쿠폰할인가</span>
+                    <span class="price">1,969,000<small>원</small></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <hr class="divider-h m-0">
+
+        <article class="card card-search">
+          <div class="row no-gutters">
+            <div class="col-5 col-md-4">
+              <div class="thumb" style="background-image: url('../images/search4.png')">
+                <button class="icon icon-like icon-white"></button>
+              </div>
+            </div>
+            <div class="col-11 col-md-12">
+              <div class="card-body p-4">
+                <div class="btn-group mb-3">
+                  <div class="badge badge-custom badge-custom-grade">
+                    <span>5성급</span>
+                  </div>
+                </div>
+                <h1 class="heading heading-bold mb-1 strcut">베이튼 서울 동대문</h1>
+                <span class="address">중구 | 동대문역사문화공원역 도보 5분</span>
+                <div class="rate">
+                  <span class="icon icon-rate icon-starrate on"></span>
+                  <span class="rate-info">최고 <b>4.3</b></span>
+                  <span> (120)</span>
+                </div>
+                <div class="price-wrap">
+                  <p>
+                    <s class="price-old">149,000<small>원</small></s>
+                  </p>
+                  <p class="price-coupon">
+                    숙박 <span class="coupon">쿠폰할인가</span>
+                    <span class="price">1,969,000<small>원</small></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <hr class="divider-h m-0">
+
+        <article class="card card-search">
+          <div class="row no-gutters">
+            <div class="col-5 col-md-4">
+              <div class="thumb" style="background-image: url('../images/search5.png')">
+                <button class="icon icon-like icon-white"></button>
+              </div>
+            </div>
+            <div class="col-11 col-md-12">
+              <div class="card-body p-4">
+                <div class="btn-group mb-3">
+                  <div class="badge badge-custom badge-custom-grade">
+                    <span>5성급</span>
+                  </div>
+                  <div class="badge badge-custom badge-custom-timesale">
+                    <i class="icon icon-timesale icon-white icon-sm"></i>
+                    <span>타임세일</span>
+                  </div>
+                </div>
+                <h1 class="heading heading-bold mb-1 strcut">베이튼 서울 동대문</h1>
+                <span class="address">중구 | 동대문역사문화공원역 도보 5분</span>
+                <div class="rate">
+                  <span class="icon icon-rate icon-starrate on"></span>
+                  <span class="rate-info">최고 <b>4.3</b></span>
+                  <span> (120)</span>
+                </div>
+                <div class="price-wrap">
+                  <p class="price bold mt-4">SOLD OUT</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <hr class="divider-h m-0">
+
+      </section>
+
+    </main>
+
+    <footer class="footer fixed-bottom">
+  <div class="container py-3">
+    <ul class="nav">
+      <li>
+        <a href="#" class="active">
+          <i class="icon icon-nav icon-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-location"></i>
+          <span>내주변</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-wish"></i>
+          <span>관심숙소</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-mypage"></i>
+          <span>마이페이지</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-kakao"></i>
+          <span>카카오상담</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+  </div>
+
+  <script>
+    // List Scroll Arrow show/hide
+    var tabWidth = $('.list-scroll-h').width();
+    var maxOffset = $('.list-scroll-h').offset().left + $('.scroll-tab').outerWidth();
+    console.log(tabWidth, maxOffset)
+    if (tabWidth < maxOffset) {
+      $('.scroll-tab .btn:last-child').addClass('active');
+    }
+
+    $('.list-scroll-h').scroll(function () {
+      var maxScrollLeft = $('.list-scroll-h').get(0).scrollWidth - $('.list-scroll-h').get(0).clientWidth;
+      var scrollLeft = $(this).scrollLeft();
+      if (scrollLeft > 0 && scrollLeft < maxScrollLeft) {
+        $(this).siblings('.btn').addClass('active');
+      }
+      else if (scrollLeft > 0 && scrollLeft == maxScrollLeft) {
+        $(this).siblings('.btn:last-child').removeClass('active');
+      }
+      else if (scrollLeft == 0 && scrollLeft < maxScrollLeft) {
+        $(this).siblings('.btn:first-child').removeClass('active');
+      }
+    })
+    // list scroll tab action
+    $('.list-scroll-h li').on('click', function () {
+      $('.list-scroll-h li').removeClass('active');
+      $(this).addClass('active');
+    });
+
+    // Carousel
+    $("#itemResult1").owlCarousel({
+      items: 1,
+      loop: true,
+      dots: false,
+      margin: 10,
+      video: true,
+    });
+    // Carousel2
+    $("#itemResult2").owlCarousel({
+      items: 1,
+      loop: true,
+      dots: false,
+      margin: 10,
+      video: true,
+    });
+
+    // 좋아요 클릭 액션
+    $('.icon-like').on('click', function () {
+      $(this).toggleClass('icon-white icon-red');
+    })
+
+    // Scroll to Sticky Header
+    window.onscroll = function () { stickyAction() };
+    var header = document.getElementById("stickyHead1");
+    var header2 = document.getElementById("stickyHead2");
+    var sticky = header.offsetTop;
+    var sticky2 = header2.offsetTop;
+
+    function stickyAction() {
+      if (window.pageYOffset > sticky - 160) {
+        header.classList.add("sticky-top");
+        // header2.classList.remove("sticky-top");
+      } else {
+        header.classList.remove("sticky-top");
+      }
+      if (window.pageYOffset > sticky2 - 160) {
+        console.log(sticky, sticky2)
+        // header.classList.remove("sticky-top");
+        header2.classList.add("sticky-top");
+      } else {
+        header2.classList.remove("sticky-top");
+      }
+    }
+  </script>
+<script src=".././js/index.bundle.js?49a85ad49723ea7f9956"></script></body>
+
+</html>

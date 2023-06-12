@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="73.125" height="39" viewBox="0 0 73.125 39">
+    <defs>
+        <style>
+            .cls-4,.cls-5{stroke:none}.cls-5{fill:#cb0543}
+        </style>
+    </defs>
+    <g transform="translate(-272 -1287)">
+        <g fill="none">
+            <path d="M19.5 0h34.125a19.5 19.5 0 0 1 0 39H19.5a19.5 19.5 0 0 1 0-39z" class="cls-4" transform="translate(272 1287)"/>
+            <path d="M19.5 3c-4.407 0-8.55 1.716-11.667 4.833C4.716 10.949 3 15.093 3 19.5s1.716 8.55 4.833 11.667C10.949 34.284 15.093 36 19.5 36h34.125c4.407 0 8.55-1.716 11.667-4.833 3.117-3.116 4.833-7.26 4.833-11.667s-1.716-8.55-4.833-11.667C62.176 4.716 58.032 3 53.625 3H19.5m0-3h34.125c10.77 0 19.5 8.73 19.5 19.5S64.395 39 53.625 39H19.5C8.73 39 0 30.27 0 19.5S8.73 0 19.5 0z" class="cls-5" transform="translate(272 1287)"/>
+        </g>
+        <g transform="translate(236 1153)">
+            <g fill="#fff" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M0 29.173V11v18.173z" class="cls-5" transform="translate(36 134)"/>
+            </g>
+            <path fill="#cb0543" d="M-18.256-2.589h6.639L-12.069 0h-9.786l2.718-15.641h3.147zM-6.837 0h-3.148l2.707-15.641h3.148zm9.26-3.91l5.264-11.73H11.3L3.572 0H.285L-2.53-15.641H.854zm18.1-2.868h-5.994L13.8-2.589h7.047L20.394 0H10.2l2.718-15.641H23.09l-.462 2.61h-7.014L14.958-9.3h6.016z" transform="translate(72 162)"/>
+        </g>
+    </g>
+</svg>

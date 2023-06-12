@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="63.491" viewBox="0 0 64 63.491">
+    <defs>
+        <style>
+            .cls-2{fill:#3d55dc}
+        </style>
+    </defs>
+    <g id="geust_icon" transform="translate(0 -.233)">
+        <path id="사각형_310" fill="rgba(255,255,255,0)" d="M0 0H63.535V63.491H0z" transform="translate(.465 .233)"/>
+        <g id="geust" transform="translate(0 4.376)">
+            <path id="사각형_317" d="M0 0H13V6H0z" class="cls-2" transform="translate(35.365 21.253)"/>
+            <path id="사각형_316" d="M0 0H14V6H0z" class="cls-2" transform="translate(12.919 21.253)"/>
+            <path id="패스_134" fill="#333" d="M63.195 72.832h-3.7V45.041H44.428a14.724 14.724 0 0 0-25.661 0H3.7v27.791H0v15.022h5.554v4.381h3.7v-4.381h44.684v4.381h3.7v-4.381h5.554zM21.056 48.8l.5-1.072a11.049 11.049 0 0 1 20.079 0l.5 1.072h13.65v15.427c-.973-.255-1.522-.121-3.826-.158v-7.511h-18.51v7.511h-3.7v-7.511H11.232v7.511c-2.308.037-2.852-.1-3.826.158V48.8zm27.2 15.272H37.151v-3.759H48.26zm-22.217 0H14.935v-3.759h11.108zM7.406 69.076a1.245 1.245 0 0 1 1.234-1.252h45.915a1.245 1.245 0 0 1 1.234 1.252v3.756H7.406zM59.492 84.1H3.7v-7.513h55.792z" transform="translate(0 -37.54)"/>
+        </g>
+    </g>
+</svg>

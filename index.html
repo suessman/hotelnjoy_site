@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>호텔엔조이</title>
+  <meta name="description" content="">
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+<!-- favicon.ico in the root directory -->
+<link rel="apple-touch-icon" href="favicon.ico">
+
+<meta name="theme-color" content="#3d55dc">
+
+<!-- owl carousel -->
+<link rel="stylesheet" href="./css/owl.carousel.min.css">
+<link rel="stylesheet" href="./css/owl.theme.default.min.css">
+<!-- Fantasy -->
+<link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+<link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- owl carousel -->
+<script src="./js/owl.carousel.min.js"></script>
+<!--Video.js -->
+<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+
+<link href="./css/styles.css?49a85ad49723ea7f9956" rel="stylesheet"></head>
+
+<body>
+
+  <!--[if IE]>
+<div class="p-3 bg-light">
+  <div class="container">
+    <p class="mb-0 browserupgrade">
+      You are using an <strong>outdated</strong> browser.
+      Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+    </p>
+  </div>
+</div>
+<![endif]-->
+
+
+  <div class="d-flex flex-column h-100">
+
+    <header class="header">
+  <div class="container">
+    <nav class="navbar px-0">
+      <span class="navbar-brand">
+        <a href="#;" class="logo">
+          <span class="sr-only">HOTELNJOY</span>
+        </a>
+      </span>
+      <!-- <ul class="navbar-nav ml-auto flex-row">
+        <li class="nav-item mx-2">
+          
+        </li>
+        <li class="nav-item mx-2">
+         
+        </li>
+      </ul> -->
+      <form class="gnb-search ml-2">
+        <input class="form-control mr-sm-2" type="search" placeholder="숙소를 검색해 보세요." readonly aria-label="검색" onclick="location.href='/product/search_home.html'">
+        <button class="btn btn-search" type="button">
+          <span class="sr-only">검색</span>
+        </button>
+      </form>
+    </nav>
+  </div>
+</header>
+
+    <main class="d-flex flex-column ui-nav">
+      <!-- top banners -->
+      <section class="main-carousel mt-2">
+        <div class="owl-carousel owl-theme" id="visual">
+          <div class="item">
+            <article style="background-image: url('./images/tip110s18060148.png')">
+              <div class="info-wrap">
+                <p>테마여행10선</p>
+                <h1>취향대로 머물다<br>호텔엔조이!</h1>
+                <button class="btn btn-custom btn-custom-round btn-primary">자세히보기</button>
+              </div>
+            </article>
+          </div>
+          <div class="item">
+            <article style="background-image: url('./images/tip110s18060148.png')">
+              <div class="info-wrap">
+                <p>테마여행10선</p>
+                <h1>취향대로 머물다<br>호텔엔조이!</h1>
+                <button class="btn btn-custom btn-custom-round btn-primary">자세히보기</button>
+              </div>
+            </article>
+          </div>
+          <div class="item">
+            <article style="background-image: url('./images/tip110s18060148.png')">
+              <div class="info-wrap">
+                <p>테마여행10선</p>
+                <h1>취향대로 머물다<br>호텔엔조이!</h1>
+                <button class="btn btn-custom btn-custom-round btn-primary">자세히보기</button>
+              </div>
+            </article>
+          </div>
+        </div>
+        <span class="slider-counter">1/10+</span>
+      </section>
+
+      <!-- Category Link -->
+      <section class="container category-link">
+        <div class="row justify-content-center">
+          <a href="/product/product_home.html" class="col-4">
+            <object type="image/svg+xml" class="svg-icon" data="./images/icon_hotel.svg"></object>
+            <span>호텔/리조트</span>
+          </a>
+          <a href="/product/product_map.html" class="col-4">
+            <object type="image/svg+xml" class="svg-icon" data="./images/icon_luxury.svg"></object>
+            <span>럭스티지</span>
+            <span class="badge badge-new badge-primary">NEW</span>
+          </a>
+          <a href="#" class="col-4">
+            <object type="image/svg+xml" class="svg-icon" data="./images/icon_pension.svg"></object>
+            <span>풀빌라/펜션</span>
+            <span class="badge badge-new badge-primary">NEW</span>
+          </a>
+          <a href="#" class="col-4">
+            <object type="image/svg+xml" class="svg-icon" data="./images/icon_triphotel.svg"></object>
+            <span>해외호텔</span>
+          </a>
+          <a href="#" class="col-4">
+            <object type="image/svg+xml" class="svg-icon" data="./images/icon_month.svg"></object>
+            <span>한달살이</span>
+          </a>
+          <a href="#" class="col-4">
+            <object type="image/svg+xml" class="svg-icon" data="./images/icon_camp.svg"></object>
+            <span>글램핑/캠핑</span>
+          </a>
+          <a href="#" class="col-4">
+            <object type="image/svg+xml" class="svg-icon" data="./images/icon_guest.svg"></object>
+            <span>한옥/게하</span>
+          </a>
+          <a href="#" class="col-4">
+            <object type="image/svg+xml" class="svg-icon" data="./images/icon_more.svg"></object>
+            <span>더보기</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="container banner banner-event">
+        <div class="row">
+          <a href="#" class="col">
+            <img src="images/banner.png" srcset="images/banner@2x.png 1000w,images/banner@3x.png 2000w" alt="" />
+          </a>
+        </div>
+      </section>
+
+      <section class="container mt-5">
+        <h2 class="heading my-2">
+          라이브커머스
+          <object type="image/svg+xml" class="icon-heading live" data="./images/badge_live.svg"></object>
+        </h2>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <video id="my-video" class="video-js vjs-theme-fantasy vjs-big-play-centered" controls disablePictureInPicture preload="auto" poster="./images/hotel_sample.jpg" data-setup="{}">
+                <source src="/mov/example_1920.mp4" type="video/mp4" />
+                <source src="/mov/example_640.webm" type="video/webm" />
+                <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+              </video>
+              <div class="card-body">
+                <a href="#;">
+                  <h5 class="card-title strcut">몬드리안서울 이태원 힐링패키지 (라이브100객실한정) 가나다라</h5>
+                  <p class="card-text">
+                    <span class="option strcut">(2인조식포함+웰컴드링크)</span>
+                  </p>
+                  <div class="price-wrap">
+                    <span class="per-sale">40<small>%</small></span>
+                    <span class="price ml-1">69,000<small>원</small></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mt-4">
+        <h2 class="heading d-flex align-item-center">
+          <object type="image/svg+xml" class="icon-heading mr-2" data="./images/icon_mclock.svg"></object>
+          오늘만 이 가격!
+        </h2>
+        <p class="heading-sub">
+          오늘예약을 내일로 미루지 말아라!<br>
+          왜냐하면 내일이면 다 팔리니깐.
+        </p>
+        <div class="owl-carousel owl-theme product" id="today">
+          <div class="item">
+            <a href="#">
+              <div class="card">
+                <picture>
+                  <source srcset="./images/photo1.png" media="(max-width: 400px)">
+                  <source srcset="./images/photo1@2x.png">
+                  <img src="./images/photo1.png" alt="벤티모호텔제주 사진">
+                  <span class="bar-time">8:20:24 ~ 3객실 남음</span>
+                </picture>
+                <div class="card-body">
+                  <span class="sup">전객실 바다전망</span>
+                  <h5 class="card-title strcut">
+                    <span>제주</span>벤티모호텔제주 가나다라마바사아자차
+                  </h5>
+                  <p class="extra-title">4월 얼리드 오션</p>
+                  <div class="price-wrap">
+                    <span class="per-sale">40<small>%</small></span>
+                    <span class="price ml-1">69,000<small>원</small></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="card">
+                <picture>
+                  <source srcset="./images/photo2.png" media="(max-width: 400px)">
+                  <source srcset="./images/photo2@2x.png">
+                  <img src="./images/photo2.png" alt="벤티모호텔제주 사진">
+                  <span class="bar-time">8:20:24 ~ 3객실 남음</span>
+                </picture>
+                <div class="card-body">
+                  <span class="sup">전객실 바다전망</span>
+                  <h5 class="card-title strcut">
+                    <span>제주</span>벤티모호텔제주 가나다라마바사아자차
+                  </h5>
+                  <p class="extra-title">4월 얼리드 오션</p>
+                  <div class="price-wrap">
+                    <span class="per-sale">40<small>%</small></span>
+                    <span class="price ml-1">69,000<small>원</small></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider-h">
+
+      <section class="container mt-4">
+        <h2 class="heading mt-2">인기지역</h2>
+        <ul class="row list-circle mt-3">
+          <li class="col-4 px-2 px-md-4">
+            <a href="#;">
+              <div class="circle-img" style="background-image: url('./images/demo_jeju.jpg');"></div>
+              <p>제주도</p>
+            </a>
+          </li>
+          <li class="col-4 px-2 px-md-4">
+            <a href="#;">
+              <div class="circle-img" style="background-image: url('./images/demo_pusan.jpg');"></div>
+              <p>부산</p>
+            </a>
+          </li>
+          <li class="col-4 px-2 px-md-4">
+            <a href="#;">
+              <div class="circle-img" style="background-image: url('./images/demo_yeosu.jpg');"></div>
+              <p>여수</p>
+            </a>
+          </li>
+          <li class="col-4 px-2 px-md-4">
+            <a href="#;">
+              <div class="circle-img" style="background-image: url('./images/demo_incheon.jpg');"></div>
+              <p>인천</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="container mt-4 tab">
+        <div class="row">
+          <div class="col-16">
+            <ul class="tab-list nav nav-tabs" id="hotTab" role="tablist">
+              <li>
+                <a href="#localSale" class="active" id="local-tab" data-toggle="tab" role="tab" aria-controls="localSale" aria-selected="true">국내판매순위</a>
+              </li>
+              <li>
+                <a href="#overseaSale" class="" id="oversea-tab" data-toggle="tab" role="tab" aria-controls="overseaSale" aria-selected="false">해외판매순위</a>
+              </li>
+            </ul>
+            <a href="#;" class="btn btn-outline-primary btn-custom-morehash">#더보기</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-16 px-0">
+            <div class="tab-content mt-4">
+              <div class="tab-pane fade show active" id="localSale" role="tabpanel" aria-labelledby="story-tab">
+                <div class="owl-carousel owl-theme rank" id="slideLocal">
+                  <div class="item">
+                    <a href="#">
+                      <div class="card">
+                        <picture>
+                          <source srcset="./images/local.png" media="(max-width: 400px)">
+                          <source srcset="./images/local@2x.png">
+                          <img src="./images/local.png" alt="벤티모호텔제주 사진">
+                          <span class="ranking">1위</span>
+                        </picture>
+                        <div class="card-body">
+                          <span class="sup">서울 | 1급</span>
+                          <h5 class="card-title strcut">
+                            선라스테이 서대문
+                          </h5>
+                          <div class="price-wrap">
+                            <span class="per-sale">40<small>%</small></span>
+                            <span class="price ml-1">69,000<small>원</small></span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="#">
+                      <div class="card">
+                        <picture>
+                          <source srcset="./images/local2.png" media="(max-width: 400px)">
+                          <source srcset="./images/local2@2x.png">
+                          <img src="./images/local2.png" alt="벤티모호텔제주 사진">
+                          <span class="ranking">2위</span>
+                        </picture>
+                        <div class="card-body">
+                          <span class="sup">서울 | 1급</span>
+                          <h5 class="card-title strcut">
+                            선라스테이 서대문
+                          </h5>
+                          <div class="price-wrap">
+                            <span class="per-sale">40<small>%</small></span>
+                            <span class="price ml-1">69,000<small>원</small></span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="#">
+                      <div class="card">
+                        <picture>
+                          <source srcset="./images/local3.png" media="(max-width: 400px)">
+                          <source srcset="./images/local3@2x.png">
+                          <img src="./images/local3.png" alt="벤티모호텔제주 사진">
+                          <span class="ranking">3위</span>
+                        </picture>
+                        <div class="card-body">
+                          <span class="sup">서울 | 1급</span>
+                          <h5 class="card-title strcut">
+                            선라스테이 서대문
+                          </h5>
+                          <div class="price-wrap">
+                            <span class="per-sale">40<small>%</small></span>
+                            <span class="price ml-1">69,000<small>원</small></span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="#">
+                      <div class="card">
+                        <picture>
+                          <source srcset="./images/local3.png" media="(max-width: 400px)">
+                          <source srcset="./images/local3@2x.png">
+                          <img src="./images/local3.png" alt="벤티모호텔제주 사진">
+                          <span class="ranking">3위</span>
+                        </picture>
+                        <div class="card-body">
+                          <span class="sup">서울 | 1급</span>
+                          <h5 class="card-title strcut">
+                            선라스테이 서대문
+                          </h5>
+                          <div class="price-wrap">
+                            <span class="per-sale">40<small>%</small></span>
+                            <span class="price ml-1">69,000<small>원</small></span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="overseaSale" role="tabpanel" aria-labelledby="story-tab">
+                <div class="owl-carousel owl-theme rank" id="slideOversea">
+                  <div class="item">
+                    <a href="#">
+                      <div class="card">
+                        <picture>
+                          <source srcset="./images/local.png" media="(max-width: 400px)">
+                          <source srcset="./images/local@2x.png">
+                          <img src="./images/local.png" alt="벤티모호텔제주 사진">
+                          <span class="ranking">1위</span>
+                        </picture>
+                        <div class="card-body">
+                          <span class="sup">서울 | 1급</span>
+                          <h5 class="card-title strcut">
+                            선라스테이 서대문
+                          </h5>
+                          <div class="price-wrap">
+                            <span class="per-sale">40<small>%</small></span>
+                            <span class="price ml-1">69,000<small>원</small></span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="#">
+                      <div class="card">
+                        <picture>
+                          <source srcset="./images/local2.png" media="(max-width: 400px)">
+                          <source srcset="./images/local2@2x.png">
+                          <img src="./images/local2.png" alt="벤티모호텔제주 사진">
+                          <span class="ranking">2위</span>
+                        </picture>
+                        <div class="card-body">
+                          <span class="sup">서울 | 1급</span>
+                          <h5 class="card-title strcut">
+                            선라스테이 서대문
+                          </h5>
+                          <div class="price-wrap">
+                            <span class="per-sale">40<small>%</small></span>
+                            <span class="price ml-1">69,000<small>원</small></span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="#">
+                      <div class="card">
+                        <picture>
+                          <source srcset="./images/local.png" media="(max-width: 400px)">
+                          <source srcset="./images/local@2x.png">
+                          <img src="./images/local.png" alt="벤티모호텔제주 사진">
+                          <span class="ranking">3위</span>
+                        </picture>
+                        <div class="card-body">
+                          <span class="sup">서울 | 1급</span>
+                          <h5 class="card-title strcut">
+                            선라스테이 서대문
+                          </h5>
+                          <div class="price-wrap">
+                            <span class="per-sale">40<small>%</small></span>
+                            <span class="price ml-1">69,000<small>원</small></span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mt-4 banner">
+        <div class="row">
+          <a href="#" class="col">
+            <img src="images/banner2.png" srcset="images/banner2@2x.png 1000w,images/banner2@3x.png 2000w" alt="" />
+          </a>
+        </div>
+      </section>
+
+      <section class="container mt-5">
+        <h2 class="heading my-3">이번주 뭐하지?</h2>
+        <div class="container">
+          <ul class="row list-odd">
+            <li class="col-11">
+              <a href="#;" class="bg-img" style="background-image: url('./images/hotel_sample.jpg');">
+                <span>#프라이빗 독채에 앞마당까지</span>
+              </a>
+            </li>
+            <li class="col-5">
+              <a href="#;" class="bg-img" style="background-image: url('./images/demo_pusan.jpg');">
+                <span>#프라이빗 독채에 앞마당까지</span>
+              </a>
+            </li>
+            <li class="col-5">
+              <a href="#;" class="bg-img" style="background-image: url('./images/demo_jeju.jpg');">
+                <span>#프라이빗 독채에 앞마당까지</span>
+              </a>
+            </li>
+            <li class="col-11">
+              <a href="#;" class="bg-img" style="background-image: url('./images/demo_yeosu.jpg');">
+                <span>#프라이빗 독채에 앞마당까지</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="container mt-5">
+        <h2 class="heading d-flex align-item-center justify-content-between">
+          오늘의 인기사진
+          <a href="#;" class="btn btn-outline-primary btn-custom-morehash">#사진보기</a>
+        </h2>
+        <p class="heading-sub">사진후기 쓰고 포인트 받아가세요~</p>
+        <div class="container mt-2">
+          <ul class="row list-rect">
+            <li>
+              <a href="#;" class="bg-img" style="background-image: url('./images/demo_yeosu.jpg');"></a>
+            </li>
+            <li>
+              <a href="#;" class="bg-img" style="background-image: url('./images/hotel_sample.jpg');"></a>
+            </li>
+            <li>
+              <a href="#;" class="bg-img" style="background-image: url('./images/demo_pusan.jpg');"></a>
+            </li>
+            <li>
+              <a href="#;" class="bg-img" style="background-image: url('./images/demo_jeju.jpg');"></a>
+            </li>
+            <li>
+              <a href="#;" class="bg-img" style="background-image: url('./images/demo_pusan.jpg');"></a>
+            </li>
+            <li>
+              <a href="#;" class="bg-img" style="background-image: url('./images/demo_jeju.jpg');"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="divider-h my-5">
+
+      <section class="container tab">
+        <div class="row">
+          <div class="col">
+            <ul class="tab-list nav nav-tabs" id="recommendTab" role="tablist">
+              <li>
+                <a href="#pensionTab" class="active" id="pension-tab" data-toggle="tab" role="tab" aria-controls="pensionTab" aria-selected="true">추천펜션</a>
+              </li>
+              <li>
+                <a href="#hotelTab" class="" id="hotel-tab" data-toggle="tab" role="tab" aria-controls="hotelTab" aria-selected="false">추천호텔</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col my-4">
+            <section class="scroll-tab">
+              <button class="btn">
+                <i class="icon icon-arrow"></i>
+                <span class="sr-only">더보기</span>
+              </button>
+              <ul class="list-scroll-h">
+                <li class="active">
+                  <a href="#;">경기</a>
+                </li>
+                <li>
+                  <a href="#;">안면도</a>
+                </li>
+                <li>
+                  <a href="#;">강원</a>
+                </li>
+                <li>
+                  <a href="#;">거제</a>
+                </li>
+                <li>
+                  <a href="#;">제주</a>
+                </li>
+                <li>
+                  <a href="#;">강원</a>
+                </li>
+              </ul>
+              <button class="btn">
+                <i class="icon icon-arrow"></i>
+                <span class="sr-only">더보기</span>
+              </button>
+            </section>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-16">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="pensionTab" role="tabpanel" aria-labelledby="story-tab">
+                <div class="row">
+                  <!-- 카드시작 -->
+                  <div class="col-md-8">
+                    <div class="card card-h2">
+                      <div class="row no-gutters">
+                        <div class="col-5">
+                          <a href="#;" class="thumb" style="background-image: url('./images/local.png')"></a>
+                        </div>
+                        <div class="col-11">
+                          <div class="card-body">
+                            <div class="row">
+                              <h5 class="col-9 pr-0 card-title strcut">이레글램핑 가나다라 마바사</h5>
+                              <div class="star-rate">
+                                <span class="icon icon-rate icon-starrate on"></span>
+                                <span class="icon icon-rate icon-starrate on"></span>
+                                <span class="icon icon-rate icon-starrate"></span>
+                                <span class="icon icon-rate icon-starrate"></span>
+                                <span class="icon icon-rate icon-starrate"></span>
+                                <span class="rate-num ml-1">4.6</span>
+                              </div>
+                            </div>
+                            <p class="card-text strcut">하느냐에 따라 정말 가치가 하느냐에 따라 정말 가치가 하느냐에 따라 정말 가치가</p>
+                            <div class="price-wrap">
+                              <span class="per-sale">40<small>%</small></span>
+                              <span class="price ml-1">69,000<small>원</small></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// 카드 -->
+                  <!-- 카드시작 -->
+                  <div class="col-md-8">
+                    <div class="card card-h2">
+                      <div class="row no-gutters">
+                        <div class="col-5">
+                          <a href="#;" class="thumb" style="background-image: url('./images/local2.png')"></a>
+                        </div>
+                        <div class="col-11">
+                          <div class="card-body">
+                            <div class="row">
+                              <h5 class="col-9 pr-0 card-title strcut">이레글램핑 가나다라 마바사</h5>
+                              <div class="star-rate">
+                                <span class="icon icon-rate icon-starrate on"></span>
+                                <span class="icon icon-rate icon-starrate on"></span>
+                                <span class="icon icon-rate icon-starrate"></span>
+                                <span class="icon icon-rate icon-starrate"></span>
+                                <span class="icon icon-rate icon-starrate"></span>
+                                <span class="rate-num ml-1">4.6</span>
+                              </div>
+                            </div>
+                            <p class="card-text strcut">하느냐에 따라 정말 가치가 하느냐에 따라 정말 가치가 하느냐에 따라 정말 가치가</p>
+                            <div class="price-wrap">
+                              <span class="per-sale">40<small>%</small></span>
+                              <span class="price ml-1">69,000<small>원</small></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// 카드 -->
+                  <!-- 카드시작 -->
+                  <div class="col-md-8">
+                    <div class="card card-h2">
+                      <div class="row no-gutters">
+                        <div class="col-5">
+                          <a href="#;" class="thumb" style="background-image: url('./images/local3.png')"></a>
+                        </div>
+                        <div class="col-11">
+                          <div class="card-body">
+                            <div class="row">
+                              <h5 class="col-9 pr-0 card-title strcut">이레글램핑 가나다라 마바사</h5>
+                              <div class="star-rate">
+                                <span class="icon icon-rate icon-starrate on"></span>
+                                <span class="icon icon-rate icon-starrate on"></span>
+                                <span class="icon icon-rate icon-starrate"></span>
+                                <span class="icon icon-rate icon-starrate"></span>
+                                <span class="icon icon-rate icon-starrate"></span>
+                                <span class="rate-num ml-1">4.6</span>
+                              </div>
+                            </div>
+                            <p class="card-text strcut">하느냐에 따라 정말 가치가 하느냐에 따라 정말 가치가 하느냐에 따라 정말 가치가</p>
+                            <div class="price-wrap">
+                              <span class="per-sale">40<small>%</small></span>
+                              <span class="price ml-1">69,000<small>원</small></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// 카드 -->
+                </div>
+              </div>
+              <div class="tab-pane fade" id="hotelTab" role="tabpanel" aria-labelledby="story-tab">
+                <div class="row">
+                  <!-- 카드시작 -->
+                  <div class="col-md-8">
+                    <div class="card card-h2">
+                      <div class="row no-gutters">
+                        <div class="col-5">
+                          <a href="#;" class="thumb" style="background-image: url('./images/hotel3.jpg')"></a>
+                        </div>
+                        <div class="col-11">
+                          <div class="card-body">
+                            <div class="row">
+                              <h5 class="col-9 pr-0 card-title strcut">이레글램핑 가나다라 마바사</h5>
+                              <div class="star-rate">
+                                <span class="icon icon-rate icon-starrate on"></span>
+                                <span class="icon icon-rate icon-starrate on"></span>
+                                <span class="icon icon-rate icon-starrate"></span>
+                                <span class="icon icon-rate icon-starrate"></span>
+                                <span class="icon icon-rate icon-starrate"></span>
+                                <span class="rate-num ml-1">4.6</span>
+                              </div>
+                            </div>
+                            <p class="card-text strcut">하느냐에 따라 정말 가치가 하느냐에 따라 정말 가치가 하느냐에 따라 정말 가치가</p>
+                            <div class="price-wrap">
+                              <span class="per-sale">40<small>%</small></span>
+                              <span class="price ml-1">69,000<small>원</small></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// 카드 -->
+                  <!-- 카드시작 -->
+                  <div class="col-md-8">
+                    <div class="card card-h2">
+                      <div class="row no-gutters">
+                        <div class="col-5">
+                          <a href="#;" class="thumb" style="background-image: url('./images/hotel4.jpg')"></a>
+                        </div>
+                        <div class="col-11">
+                          <div class="card-body">
+                            <div class="row">
+                              <h5 class="col-9 pr-0 card-title strcut">이레글램핑 가나다라 마바사</h5>
+                              <div class="star-rate">
+                                <span class="icon icon-rate icon-starrate on"></span>
+                                <span class="icon icon-rate icon-starrate on"></span>
+                                <span class="icon icon-rate icon-starrate"></span>
+                                <span class="icon icon-rate icon-starrate"></span>
+                                <span class="icon icon-rate icon-starrate"></span>
+                                <span class="rate-num ml-1">4.6</span>
+                              </div>
+                            </div>
+                            <p class="card-text strcut">하느냐에 따라 정말 가치가 하느냐에 따라 정말 가치가 하느냐에 따라 정말 가치가</p>
+                            <div class="price-wrap">
+                              <span class="per-sale">40<small>%</small></span>
+                              <span class="price ml-1">69,000<small>원</small></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// 카드 -->
+                  <!-- 카드시작 -->
+                  <div class="col-md-8">
+                    <div class="card card-h2">
+                      <div class="row no-gutters">
+                        <div class="col-5">
+                          <a href="#;" class="thumb" style="background-image: url('./images/local3.png')"></a>
+                        </div>
+                        <div class="col-11">
+                          <div class="card-body">
+                            <div class="row">
+                              <h5 class="col-9 pr-0 card-title strcut">이레글램핑 가나다라 마바사</h5>
+                              <div class="star-rate">
+                                <span class="icon icon-rate icon-starrate on"></span>
+                                <span class="icon icon-rate icon-starrate on"></span>
+                                <span class="icon icon-rate icon-starrate"></span>
+                                <span class="icon icon-rate icon-starrate"></span>
+                                <span class="icon icon-rate icon-starrate"></span>
+                                <span class="rate-num ml-1">4.6</span>
+                              </div>
+                            </div>
+                            <p class="card-text strcut">하느냐에 따라 정말 가치가 하느냐에 따라 정말 가치가 하느냐에 따라 정말 가치가</p>
+                            <div class="price-wrap">
+                              <span class="per-sale">40<small>%</small></span>
+                              <span class="price ml-1">69,000<small>원</small></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// 카드 -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mt-5">
+        <h2 class="heading">해외호텔</h2>
+        <div class="row mt-3">
+          <div class="col px-0">
+            <div class="owl-carousel owl-theme" id="overseaHotel">
+              <div class="item">
+                <a href="#">
+                  <div class="card area">
+                    <picture>
+                      <source srcset="./images/photo1.png" media="(max-width: 400px)">
+                      <source srcset="./images/photo1@2x.png">
+                      <img src="http://localhost:8080./images/photo1.png" alt="벤티모호텔제주 사진" style="opacity: 1;">
+                      <span class="bar-area">영국런던</span>
+                    </picture>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <div class="card area">
+                    <picture>
+                      <source srcset="./images/photo2.png" media="(max-width: 400px)">
+                      <source srcset="./images/photo2@2x.png">
+                      <img src="http://localhost:8080./images/photo2.png" alt="벤티모호텔제주 사진" style="opacity: 1;">
+                      <span class="bar-area">스위스</span>
+                    </picture>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mt-5">
+        <h2 class="heading">기획전</h2>
+        <div class="row mt-3">
+          <div class="col-md-8 mb-4">
+            <div class="card card-inner bg-dark text-white">
+              <a href="#;" class="card-img" style="background-image: url('./images/hotel1.jpg');">
+                <h5 class="card-title">
+                  <div class="badge badge-md">MD추천</div>
+                  <p class="mt-2 mb-1"><span>영국</span>벤티모호텔제주</p>
+                  <small>스파 모텔에서 프라이빗하게 힐링!</small>
+                </h5>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-8 mb-4">
+            <div class="card card-inner bg-dark text-white">
+              <a href="#;" class="card-img" style="background-image: url('./images/hotel2.jpg');">
+                <h5 class="card-title">
+                  <div class="badge badge-md">MD추천</div>
+                  <p class="mt-2 mb-1"><span>영국</span>벤티모호텔제주</p>
+                  <small>스파 모텔에서 프라이빗하게 힐링!</small>
+                </h5>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-8 mb-4">
+            <div class="card card-inner bg-dark text-white">
+              <a href="#;" class="card-img" style="background-image: url('./images/hotel3.jpg');">
+                <h5 class="card-title">
+                  <div class="badge badge-md">MD추천</div>
+                  <p class="mt-2 mb-1"><span>영국</span>벤티모호텔제주</p>
+                  <small>스파 모텔에서 프라이빗하게 힐링!</small>
+                </h5>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-8 mb-4">
+            <div class="card card-inner bg-dark text-white">
+              <a href="#;" class="card-img" style="background-image: url('./images/hotel4.jpg');">
+                <h5 class="card-title">
+                  <div class="badge badge-md">MD추천</div>
+                  <p class="mt-2 mb-1"><span>영국</span>벤티모호텔제주</p>
+                  <small>스파 모텔에서 프라이빗하게 힐링!</small>
+                </h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 공지,고객센터 기타 -->
+      <section class="container-fluid mt-4 footer-cs">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 px-0 px-sm-3">
+              <ul class="list-menu">
+                <li>
+                  <a href="#;">공지</a>
+                </li>
+                <li>
+                  <a href="#;">고객센터 운영시간 안내</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4 px-0 px-sm-3 d-flex align-item-center justify-content-end">
+              <a href="#;" class="btn">
+                <i class="icon icon-arrowbold"></i>
+                <span class="sr-only">바로가기</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container footer-copy">
+        <div class="row">
+          <div class="col">
+            <p>(주)호텔엔조이</p>
+            <p>대표이사: 강경원 | 서울 강서구 마곡동로 55 마커스빌딩 10층</p>
+            <p>contact@hotelnjoy.com | 1566-3655</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="footer fixed-bottom">
+  <div class="container py-3">
+    <ul class="nav">
+      <li>
+        <a href="#" class="active">
+          <i class="icon icon-nav icon-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-location"></i>
+          <span>내주변</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-wish"></i>
+          <span>관심숙소</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-mypage"></i>
+          <span>마이페이지</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-kakao"></i>
+          <span>카카오상담</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+  </div>
+
+  <script>
+    // Top Visual Carousel
+    $("#visual").owlCarousel({
+      items: 1,
+      loop: true,
+      dots: false,
+      margin: 10,
+      center: true,
+      stagePadding: 20,
+      onInitialized: counter,
+      onChanged: counter,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 2,
+        },
+        1000: {
+          items: 2,
+        }
+      }
+    });
+    function counter(event) {
+      if (!event.namespace) {
+        return;
+      }
+      var slides = event.relatedTarget;
+      $('.slider-counter').text(slides.relative(slides.current()) + 1 + '/' + slides.items().length);
+    }
+
+    // Carousel - Today Price 
+    $("#today").owlCarousel({
+      items: 1.4,
+      dots: false,
+      margin: 15,
+      // stagePadding: 16,
+      autoWidth: false, // true 시 margin 옵션 고정값. false는 유동
+      merge: true,  // items가 소수점 단위일 경우 true
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1.4,
+        },
+        600: {
+          items: 2.4,
+        },
+        1000: {
+          items: 3.4,
+          loop: false
+        }
+      }
+    });
+
+    // Carousel - Local rank
+    $("#slideLocal, #slideOversea").owlCarousel({
+      items: 2.3,
+      dots: false,
+      margin: 15,
+      stagePadding: 20,
+      autoWidth: false, // true 시 margin 옵션 고정값. false는 유동
+      // autoHeight: false,
+      merge: true,  // items가 소수점 단위일 경우 true
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 2.3,
+        },
+        600: {
+          items: 3,
+        },
+        1000: {
+          items: 4,
+          loop: false
+        }
+      }
+    });
+    // Carousel - Oversea rank
+    // $("#slideOversea").owlCarousel({
+    //   items: 2.3,
+    //   dots: false,
+    //   margin: 15,
+    //   stagePadding: 20,
+    //   autoWidth: false, // true 시 margin 옵션 고정값. false는 유동
+    //   merge: true,  // items가 소수점 단위일 경우 true
+    //   responsiveClass: true,
+    //   responsive: {
+    //     0: {
+    //       items: 2.3,
+    //     },
+    //     600: {
+    //       items: 3,
+    //     },
+    //     1000: {
+    //       items: 4,
+    //       loop: false
+    //     }
+    //   }
+    // });
+    // Carousel - overseaHotel 
+    $("#overseaHotel").owlCarousel({
+      items: 1.1,
+      dots: false,
+      margin: 15,
+      stagePadding: 20,
+      autoWidth: false, // true 시 margin 옵션 고정값. false는 유동
+      merge: true,  // items가 소수점 단위일 경우 true
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1.1,
+        },
+        600: {
+          items: 2.1,
+        },
+        1000: {
+          items: 3.1,
+          loop: false
+        }
+      }
+    });
+
+    // Video.js Options
+    var player = videojs('my-video', {
+      preload: true,
+      controlBar: {
+        playToggle: false,
+        captionsButton: false,
+        chaptersButton: false,
+        subtitlesButton: false,
+        remainingTimeDisplay: false,
+        progressControl: {
+          seekBar: true
+        },
+        fullscreenToggle: false,
+        playbackRateMenuButton: false,
+      },
+    });
+
+    $(function () {
+      // List Scroll Arrow show/hide
+      var tabWidth = $('.list-scroll-h').width();
+      var maxOffset = $('.list-scroll-h').offset().left + $('.scroll-tab').outerWidth();
+      console.log(tabWidth, maxOffset)
+      if (tabWidth < maxOffset) {
+        $('.scroll-tab .btn:last-child').addClass('active');
+      }
+
+      $('.list-scroll-h').scroll(function () {
+        var maxScrollLeft = $('.list-scroll-h').get(0).scrollWidth - $('.list-scroll-h').get(0).clientWidth;
+        var scrollLeft = $(this).scrollLeft();
+        if (scrollLeft > 0 && scrollLeft < maxScrollLeft) {
+          $(this).siblings('.btn').addClass('active');
+        }
+        else if (scrollLeft > 0 && scrollLeft == maxScrollLeft) {
+          $(this).siblings('.btn:last-child').removeClass('active');
+        }
+        else if (scrollLeft == 0 && scrollLeft < maxScrollLeft) {
+          $(this).siblings('.btn:first-child').removeClass('active');
+        }
+      })
+
+      //--- Tabs - Following border animation
+      var w = Math.round($(".tab-list li a").width());
+      // console.log(w);
+      var initPos = $(".tab-list a.active").parent('li').position();
+      $("head").append('<style id="append-style">.tab-list:after{width:' + w + 'px; left: ' + initPos.left + 'px;}</style>');
+
+      // window resize support
+      var resizeTimer;
+      $(window).on('resize', function (e) {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function () {
+          w = Math.round($(".tab-list li a").width());
+          initPos = $(".tab-list a.active").parent('li').position();
+          $("head").find('#append-style').remove();
+          $("head").append('<style id="append-style">.tab-list:after{width:' + w + 'px; left: ' + initPos.left + 'px;}</style>');
+        }, 250);
+      });
+      // tab active
+      $(".tab-list li").on('click', function () {
+        var pos = $(this).position();
+        $("head").find('#append-style').remove();
+        $(".tab-list li a").removeClass('active');
+        $("head").append('<style id="append-style">.tab-list:after{width:' + w + 'px; left: ' + pos.left + 'px;}</style>');
+        $(this).children('a').addClass('active');
+      });
+
+      // BS tab action
+      $('#hotTab a').on('click', function (event) {
+        event.preventDefault()
+        $(this).tab('show')
+      });
+      $('#recommendTab a').on('click', function (event) {
+        event.preventDefault()
+        $(this).tab('show')
+      });
+
+      // list scroll tab action
+      $('.list-scroll-h li').on('click', function () {
+        $('.list-scroll-h li').removeClass('active');
+        $(this).addClass('active');
+      });
+
+    })
+  </script>
+<script src="./js/index.bundle.js?49a85ad49723ea7f9956"></script></body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>호텔엔조이 - 리뷰쓰기</title>
+  <meta name="description" content="">
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+<!-- favicon.ico in the root directory -->
+<link rel="apple-touch-icon" href="favicon.ico">
+
+<meta name="theme-color" content="#3d55dc">
+
+<!-- owl carousel -->
+<link rel="stylesheet" href="/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+<!-- Fantasy -->
+<link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+<link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- owl carousel -->
+<script src="/js/owl.carousel.min.js"></script>
+<!--Video.js -->
+<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<link href=".././css/styles.css?49a85ad49723ea7f9956" rel="stylesheet"></head>
+
+<body>
+
+  <!--[if IE]>
+<div class="p-3 bg-light">
+  <div class="container">
+    <p class="mb-0 browserupgrade">
+      You are using an <strong>outdated</strong> browser.
+      Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+    </p>
+  </div>
+</div>
+<![endif]-->
+
+
+  <div class="d-flex flex-column">
+
+    <main class="d-flex h-100 flex-column">
+
+      <!-- 알림 alert [삭제 / 취소] -->
+      <button class="btn btn-lg my-3 btn-primary" data-toggle="modal" data-target="#alertModal">알림 대화 팝업</button>
+      <!-- 이용동의 alert -->
+      <button class="btn btn-lg my-3 btn-primary" data-toggle="modal" data-target="#agreeModal">위치서비스 동의 팝업</button>
+      <!-- alert call -->
+      <button class="btn btn-lg my-3 btn-primary" data-toggle="modal" data-target="#gpsModal">위치서비스 사용 팝업</button>
+
+    </main>
+
+  </div>
+
+  <!-- 알림 Modal -->
+  <div class="modal fade" id="alertModal" tabindex="-1" aria-labelledby="대화창입니다" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-center modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="alertModalLabel">알림</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="닫기">
+            <i class="icon icon-close icon-ml"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            등록하신 이용후기를 삭제 하시겠습니까?<br>
+            삭제된 이용후기는 복원되지 않습니다.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <div class="container p-0 m-0">
+            <div class="row m-0">
+              <div class="col-8 px-0">
+                <button type="button" class="btn btn-ml btn-info text-dark">삭제</button>
+              </div>
+              <div class="col-8 px-0">
+                <button type="button" class="btn btn-ml btn-primary" data-dismiss="modal">취소</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 동의 Modal -->
+  <div class="modal fade" id="agreeModal" tabindex="-1" aria-labelledby="대화창입니다" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-center modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="agreeModalLabel">위치기반 서비스 이용동의</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="닫기">
+            <i class="icon icon-close icon-ml"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            고객님 주변에 위치한 업체 검색을 위해<br>
+            위치정보 이용 동의가 필요합니다.
+          </p>
+          <a href="#;" class="agree-detail mb-2"><u>이용약관 상세보기</u></a>
+        </div>
+        <div class="modal-footer">
+          <div class="container p-0 m-0">
+            <div class="row m-0">
+              <div class="col-16 px-0">
+                <button type="button" class="btn btn-ml btn-primary" data-dismiss="modal">동의하고 검색</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 위치서비스 Modal -->
+  <div class="modal fade" id="gpsModal" tabindex="-1" aria-labelledby="대화창입니다" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-center modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="gpsModalLabel">위치 서비스 사용</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="닫기">
+            <i class="icon icon-close icon-ml"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            내 위치 정보를 사용하려면<br>
+            '설정 > 개인 정보 보호 > 위치 서비스'에서<br>
+            허용해주세요 .
+          </p>
+        </div>
+        <div class="modal-footer">
+          <div class="container p-0 m-0">
+            <div class="row m-0">
+              <div class="col-8 px-0">
+                <button type="button" class="btn btn-ml btn-info text-dark">설정</button>
+              </div>
+              <div class="col-8 px-0">
+                <button type="button" class="btn btn-ml btn-primary" data-dismiss="modal">취소</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src=".././js/index.bundle.js?49a85ad49723ea7f9956"></script></body>
+
+</html>

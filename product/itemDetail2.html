@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>호텔엔조이</title>
+  <meta name="description" content="">
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+<!-- favicon.ico in the root directory -->
+<link rel="apple-touch-icon" href="favicon.ico">
+
+<meta name="theme-color" content="#3d55dc">
+
+<!-- owl carousel -->
+<link rel="stylesheet" href="../css/owl.carousel.min.css">
+<link rel="stylesheet" href="../css/owl.theme.default.min.css">
+<!-- Fantasy -->
+<link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+<link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- owl carousel -->
+<script src="../js/owl.carousel.min.js"></script>
+<!--Video.js -->
+<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+
+<link href=".././css/styles.css?49a85ad49723ea7f9956" rel="stylesheet"></head>
+
+<body>
+
+  <!--[if IE]>
+<div class="p-3 bg-light">
+  <div class="container">
+    <p class="mb-0 browserupgrade">
+      You are using an <strong>outdated</strong> browser.
+      Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+    </p>
+  </div>
+</div>
+<![endif]-->
+
+
+  <div class="d-flex flex-column h-100">
+
+    <header class="header header-detail fixed-top position-absolute">
+  <div class="container px-0">
+    <nav class="navbar">
+      <div>
+        <a href="/index.html" class="btn">
+          <i class="icon icon-back icon-md icon-white"></i>
+          <span class="sr-only">뒤로가기</span>
+        </a>
+      </div>
+      <div>
+        <a href="#;" class="btn">
+          <i class="icon icon-like icon-md icon-white"></i>
+          <span class="sr-only">좋아요</span>
+        </a>
+        <a href="#;" class="btn">
+          <i class="icon icon-share icon-md icon-white"></i>
+          <span class="sr-only">공유하기</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+    <main class="d-flex flex-column ui-nav">
+
+      <!-- 360 Panorama일 경우, -->
+      <div class="container-fluid vr-container px-0">
+        <div id="panorama">
+          <div class="vr-nav">
+            <button class="vr-prev-btn " id="prev"><span class="sr-only">이전</span></button>
+            <button class="vr-next-btn" id="next"><span class="sr-only">다음</span></button>
+          </div>
+          <div class="compass-text">VR</div>
+          <div class="vr-num"></div>
+        </div>
+      </div>
+
+      <!-- 공지,고객센터 기타 -->
+      <section class="container-fluid mt-4 footer-cs">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 px-0 px-sm-3">
+              <ul class="list-menu">
+                <li>
+                  <a href="#;">공지</a>
+                </li>
+                <li>
+                  <a href="#;">고객센터 운영시간 안내</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4 px-0 px-sm-3 d-flex align-item-center justify-content-end">
+              <a href="#;" class="btn">
+                <i class="icon icon-arrowbold"></i>
+                <span class="sr-only">바로가기</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container footer-copy">
+        <div class="row">
+          <div class="col">
+            <p>(주)호텔엔조이</p>
+            <p>대표이사: 강경원 | 서울 강서구 마곡동로 55 마커스빌딩 10층</p>
+            <p>contact@hotelnjoy.com | 1566-3655</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer fixed-bottom">
+  <div class="container py-3">
+    <ul class="nav">
+      <li>
+        <a href="#" class="active">
+          <i class="icon icon-nav icon-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-location"></i>
+          <span>내주변</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-wish"></i>
+          <span>관심숙소</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-mypage"></i>
+          <span>마이페이지</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-kakao"></i>
+          <span>카카오상담</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+  </div>
+
+  <script>
+    // 파노라마 360 -- 모바일 4096 이하 이미지 사용 권장
+    var vrData = {
+      1: {
+        "panorama": "../images/panorama-1.jpg",
+        "preview": "../images/demo_jeju.jpg",
+      },
+      2: {
+        "panorama": "../images/panorama-2.jpg",
+        "preview": "../images/demo_yeosu.jpg",
+      },
+      3: {
+        "panorama": "../images/panorama-3.jpg",
+        "preview": "../images/demo_pusan.jpg",
+      },
+      4: {
+        "panorama": "../images/panorama-4.jpg",
+        "preview": "../images/demo_pusan.jpg",
+      },
+    }
+    var viewer = pannellum.viewer('panorama', {
+      // pannellum.viewer('panorama', {
+      default: {
+        firstScene: "1",
+        type: "equirectangular",
+        showZoomCtrl: false,
+        showFullscreenCtrl: false,
+        compass: true,
+        dynamicUpdate: true,
+        sceneFadeDuration: 700
+      },
+      scenes: vrData
+    });
+
+    $(function () {
+      // VR prev, next
+      var vrNum = Object.keys(vrData).length;
+      var current = 1;
+      $('.vr-num').text(current + '/' + vrNum);
+      $('.vr-nav #prev').on('click', function (e) {
+        if (current > 1 && current <= vrNum) {
+          current--;
+          e.preventDefault();
+          viewer.loadScene(current);
+          $('.vr-num').text(current + '/' + vrNum);
+        }
+        console.log(current)
+        return false;
+      })
+      $('.vr-nav #next').on('click', function (e) {
+        if (current < vrNum) {
+          current++;
+          e.preventDefault();
+          viewer.loadScene(current);
+          $('.vr-num').text(current + '/' + vrNum);
+        }
+        console.log(current)
+        return false;
+      })
+    })
+
+    // Top Detail Carousel
+    $("#product-detail").owlCarousel({
+      items: 1,
+      loop: true,
+      dots: false,
+      margin: 10,
+      onInitialized: counter,
+      onChanged: counter,
+    });
+    function counter(event) {
+      if (!event.namespace) {
+        return;
+      }
+      var slides = event.relatedTarget;
+      $('.slider-counter').text(slides.relative(slides.current()) + 1 + '/' + slides.items().length);
+    }
+
+    // // Carousel - Today Price 
+    // $("#today").owlCarousel({
+    //   items: 1.4,
+    //   dots: false,
+    //   margin: 15,
+    //   // stagePadding: 16,
+    //   autoWidth: false, // true 시 margin 옵션 고정값. false는 유동
+    //   merge: true,  // items가 소수점 단위일 경우 true
+    //   responsiveClass: true,
+    //   responsive: {
+    //     0: {
+    //       items: 1.4,
+    //     },
+    //     600: {
+    //       items: 2.4,
+    //     },
+    //     1000: {
+    //       items: 3.4,
+    //       loop: false
+    //     }
+    //   }
+    // });
+
+    // // Carousel - Local rank
+    // $("#slideLocal").owlCarousel({
+    //   items: 2.3,
+    //   dots: false,
+    //   margin: 15,
+    //   stagePadding: 20,
+    //   autoWidth: false, // true 시 margin 옵션 고정값. false는 유동
+    //   merge: true,  // items가 소수점 단위일 경우 true
+    //   responsiveClass: true,
+    //   responsive: {
+    //     0: {
+    //       items: 2.3,
+    //     },
+    //     600: {
+    //       items: 3,
+    //     },
+    //     1000: {
+    //       items: 4,
+    //       loop: false
+    //     }
+    //   }
+    // });
+    // // Carousel - Oversea rank
+    // $("#slideOversea").owlCarousel({
+    //   items: 2.3,
+    //   dots: false,
+    //   margin: 15,
+    //   stagePadding: 20,
+    //   autoWidth: false, // true 시 margin 옵션 고정값. false는 유동
+    //   merge: true,  // items가 소수점 단위일 경우 true
+    //   responsiveClass: true,
+    //   responsive: {
+    //     0: {
+    //       items: 2.3,
+    //     },
+    //     600: {
+    //       items: 3,
+    //     },
+    //     1000: {
+    //       items: 4,
+    //       loop: false
+    //     }
+    //   }
+    // });
+    // // Carousel - overseaHotel 
+    // $("#overseaHotel").owlCarousel({
+    //   items: 1.1,
+    //   dots: false,
+    //   margin: 15,
+    //   stagePadding: 20,
+    //   autoWidth: false, // true 시 margin 옵션 고정값. false는 유동
+    //   merge: true,  // items가 소수점 단위일 경우 true
+    //   responsiveClass: true,
+    //   responsive: {
+    //     0: {
+    //       items: 1.1,
+    //     },
+    //     600: {
+    //       items: 2.1,
+    //     },
+    //     1000: {
+    //       items: 3.1,
+    //       loop: false
+    //     }
+    //   }
+    // });
+
+  </script>
+<script src=".././js/index.bundle.js?49a85ad49723ea7f9956"></script></body>
+
+</html>

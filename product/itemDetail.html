@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>호텔엔조이</title>
+  <meta name="description" content="">
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+<!-- favicon.ico in the root directory -->
+<link rel="apple-touch-icon" href="favicon.ico">
+
+<meta name="theme-color" content="#3d55dc">
+
+<!-- owl carousel -->
+<link rel="stylesheet" href="../css/owl.carousel.min.css">
+<link rel="stylesheet" href="../css/owl.theme.default.min.css">
+<!-- Fantasy -->
+<link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+<link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- owl carousel -->
+<script src="../js/owl.carousel.min.js"></script>
+<!--Video.js -->
+<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+
+<link href=".././css/styles.css?49a85ad49723ea7f9956" rel="stylesheet"></head>
+
+<body>
+
+  <!--[if IE]>
+<div class="p-3 bg-light">
+  <div class="container">
+    <p class="mb-0 browserupgrade">
+      You are using an <strong>outdated</strong> browser.
+      Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+    </p>
+  </div>
+</div>
+<![endif]-->
+
+
+  <div class="d-flex flex-column">
+
+    <header class="header header-detail fixed-top position-absolute">
+  <div class="container px-0">
+    <nav class="navbar">
+      <div>
+        <a href="/index.html" class="btn">
+          <i class="icon icon-back icon-md icon-white"></i>
+          <span class="sr-only">뒤로가기</span>
+        </a>
+      </div>
+      <div>
+        <a href="#;" class="btn">
+          <i class="icon icon-like icon-md icon-white"></i>
+          <span class="sr-only">좋아요</span>
+        </a>
+        <a href="#;" class="btn">
+          <i class="icon icon-share icon-md icon-white"></i>
+          <span class="sr-only">공유하기</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+    <main class="d-flex h-100 flex-column ui-nav">
+
+      <section class="container-fluid px-0 top-visual">
+        <div class="slide-wrapper">
+          <div class="owl-carousel owl-theme" id="productDetail">
+            <div class="item">
+              <!-- 동영상 -->
+              <video id="top-video" class="video-js vjs-theme-fantasy vjs-big-play-centered" controls disablePictureInPicture preload="auto" poster="../images/hotel_sample.jpg" data-setup="{}">
+                <source src="/mov/example_1920.mp4" type="video/mp4" />
+                <source src="/mov/example_640.webm" type="video/webm" />
+                <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+              </video>
+            </div>
+            <div class="item">
+              <!-- 이미지 -->
+              <article style="background-image: url('../images/room1.jpg')"></article>
+            </div>
+          </div>
+          <a href="/index.html" class="vr-button"></a>
+          <span class="slider-counter">1/10+</span>
+        </div>
+      </section>
+
+      <section class="container detail mt-4">
+        <div class="row">
+          <div class="col-5">
+            <div class="badge badge-custom badge-custom-grade">
+              <span>5성급</span>
+            </div>
+          </div>
+          <div class="col-11 text-right">
+            <div class="star-rate">
+              <span class="icon icon-rate icon-starrate on"></span>
+              <span class="icon icon-rate icon-starrate on"></span>
+              <span class="icon icon-rate icon-starrate"></span>
+              <span class="icon icon-rate icon-starrate"></span>
+              <span class="icon icon-rate icon-starrate"></span>
+              <span class="rate-num ml-1">4.6</span>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3 mb-2 detail-heading">
+          <div class="col-16">
+            <h1 class="heading">[제주] 메리어트관 제주신화월드<br>호텔앤리조트</h1>
+            <span class="address">서울 강남구 삼성동 159 </span>
+            <button class="btn btn-map btn-light">
+              <i class="icon icon-pin icon-sm"></i><span>지도보기</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 쿠폰 -->
+      <section class="container mt-4">
+        <a href="#;" class="container coupon-wrap type1">
+          <div>
+            <span class="icon icon-gift icon-white"></span>
+            지금 바로 <span class="text-sky">할인 받을 수 있는</span> 쿠폰
+          </div>
+          <i class="icon icon-coupondown icon-white"></i>
+        </a>
+      </section>
+
+      <!-- 팩키지 정보 -->
+      <section class="container mt-5">
+        <div class="row">
+          <div class="col-16">
+            <div class="package-info">
+              <b>미리 준비하자, 호텔엔조이 얼리버드 PKG</b>
+              <ul>
+                <li>
+                  구성 : 객실 + 영화예매권 2매
+                </li>
+                <li>
+                  투숙가능기간 : 2017.06.28 ~ 2017.07.31
+                </li>
+                <li>
+                  상기 혜택은 호텔엔조이 얼리버드 PKG를 구매하신 분께만 제공됩니다.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 이용후기 -->
+      <section class="container mt-4">
+        <h2 class="heading heading-2 mt-3 d-flex align-item-center justify-content-between">
+          <div>
+            <i class="icon icon-review"></i>
+            <b>1,675</b> 개 이용 후기
+          </div>
+          <a href="#;" class="btn btn-outline-primary btn-custom-morehash">#더보기</a>
+        </h2>
+        <div class="row mt-3">
+          <div class="col px-0">
+            <div class="owl-carousel owl-theme" id="review">
+              <div class="item">
+                <a href="#">
+                  <div class="card card-review">
+                    <div class="rate">
+                      <span class="icon icon-rate icon-starrate on "></span>
+                      <span class="rate-info">최고 <b>4.3</b></span>
+                    </div>
+                    <div class="d-flex mt-1">
+                      <div class="thumb" style="background-image: url('../images/local.png')"></div>
+                      <div class="content strcut">
+                        아... 정말 별로였음 낡고 좁고 옛날 관광 호텔의 말 별로였음 낡고 좁고 옛날 관광 호텔의퀴퀴함 호텔의 퀴퀴함호텔의 퀴퀴함 그자체..
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <div class="card card-review">
+                    <div class="rate">
+                      <span class="icon icon-rate icon-starrate on "></span>
+                      <span class="rate-info">최고 <b>4.3</b></span>
+                    </div>
+                    <div class="d-flex mt-1">
+                      <div class="thumb" style="background-image: url('../images/local.png')"></div>
+                      <div class="content strcut">
+                        아... 정말 별로였음 낡고 좁고 옛날 관광 호텔의 말 별로였음 낡고 좁고 옛날 관광 호텔의퀴퀴함 호텔의 퀴퀴함호텔의 퀴퀴함 그자체..
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <div class="card card-review">
+                    <div class="rate">
+                      <span class="icon icon-rate icon-starrate on "></span>
+                      <span class="rate-info">최고 <b>4.3</b></span>
+                    </div>
+                    <div class="d-flex mt-1">
+                      <div class="thumb" style="background-image: url('../images/local.png')"></div>
+                      <div class="content strcut">
+                        아... 정말 별로였음 낡고 좁고 옛날 관광 호텔의 말 별로였음 낡고 좁고 옛날 관광 호텔의퀴퀴함 호텔의 퀴퀴함호텔의 퀴퀴함 그자체..
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider-h my-5">
+
+      <!-- 예약일 -->
+      <section class="container mt-2">
+        <div class="container book-info">
+          <div>
+            <i class="icon icon-calendar icon-md"></i>
+            <span>체크인 <b>6월9일(월)</b></span>
+            <span>체크아웃 <b>99월10일(화)</b></span>
+          </div>
+          <a href="#;">변경</a>
+        </div>
+      </section>
+
+      <!-- 객실상품 1 -->
+      <section class="container-fluid bg-grey half mt-4 pb-3">
+        <article class="container px-0">
+          <div class="card card-room">
+            <div class="slide-wrapper">
+              <!-- Carousel -->
+              <div class="owl-carousel owl-theme" id="roomPhoto">
+                <div class="item">
+                  <div class="thumb" style="background-image: url('../images/room@3x.png');">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb" style="background-image: url('../images/room@3x.png');">
+                  </div>
+                </div>
+              </div>
+              <!--// Carousel -->
+              <div class="badge badge-custom badge-custom-timesale">
+                <i class="icon icon-timesale icon-white icon-sm"></i>
+                <span>타임세일</span>
+              </div>
+              <span class="slider-counter" id="countRoom">1/10+</span>
+              <div class="text-bg text-bg-round">5객실 남음</div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title mt-2">
+                <div class="row">
+                  <div class="col-9 pr-0">메리어트관 제주신화월드 호텔엔리조트</div>
+                  <div class="col-7 text-right text-nowrap">
+                    <div class="btn-group">
+                      <div class="badge badge-custom badge-custom-motel"><span>데이유즈</span></div>
+                      <div class="badge badge-custom badge-custom-grade"><span>숙박</span></div>
+                    </div>
+                  </div>
+                </div>
+              </h5>
+              <div class="container px-0 mt-3">
+                <div class="row">
+                  <ul class="col-8 list list-normal">
+                    <li>객실크기 25.2 m<sup>2</sup></li>
+                    <li>침대: 더블 1개</li>
+                    <li>2인 기준/ 최대 2인</li>
+                  </ul>
+                  <div class="col-8">
+                    <div class="price-wrap">
+                      <span class="price ml-1">69,000<small>원부터~</small></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="mt-4 btn btn-md btn-block btn-outline-primary btn-more">
+                <span>3개 상품보기</span>
+                <i class="arrow arrow-down"></i>
+              </button>
+            </div>
+            <!-- 더보기 객실 1 -->
+            <div class="more-rooms">
+              <ul class="list-room">
+                <li>
+                  <div class="btn-group">
+                    <div class="badge badge-custom badge-custom-type">
+                      <span>호텔에서 결제</span>
+                    </div>
+                    <div class="badge badge-custom badge-custom-timesale">
+                      <i class="icon icon-timesale icon-white icon-sm"></i>
+                      <span>타임세일</span>
+                    </div>
+                  </div>
+                  <h5 class="heading heading-2">[20시체크인] 스탠다드 트윈 빌리지뷰 호텔앤리조트</h5>
+                  <div class="room-info">
+                    <div class="info-time">조식불포함 IN 15:00 OUT 11:00</div>
+                    <b class="mt-3 d-block">기본정보</b>
+                    <ul class="mt-2 list list-normal">
+                      <li>룸 온리상품</li>
+                      <li>20시이후 체크인 상품</li>
+                    </ul>
+                    <div class="price-wrap">
+                      <p>
+                        숙박 <span class="coupon">쿠폰할인가</span>
+                        <s class="price-old">149,000<small>원</small></s>
+                      </p>
+                      <p>
+                      <div class="badge badge-custom badge-custom-dayuse">
+                        <span>데이유즈</span>
+                      </div>
+                      <span class="price">1,969,000<small>원</small></span>
+                      </p>
+                    </div>
+                  </div>
+                  <button class="my-4 btn btn-block btn-md btn-navy">예약하기</button>
+                </li>
+                <li>
+                  <div class="btn-group">
+                    <div class="badge badge-custom badge-custom-type">
+                      <span>호텔에서 결제</span>
+                    </div>
+                    <div class="badge badge-custom badge-custom-timesale">
+                      <i class="icon icon-timesale icon-white icon-sm"></i>
+                      <span>타임세일</span>
+                    </div>
+                  </div>
+                  <h5 class="heading heading-2">[20시체크인] 스탠다드 트윈 빌리지뷰 호텔앤리조트</h5>
+                  <div class="room-info">
+                    <div class="info-time">조식불포함 IN 15:00 OUT 11:00</div>
+                    <b class="mt-3 d-block">기본정보</b>
+                    <ul class="mt-2 list list-normal">
+                      <li>룸 온리상품</li>
+                      <li>20시이후 체크인 상품</li>
+                    </ul>
+                    <div class="price-wrap">
+                      <p>
+                        <span class="price-old"><s>149,000<small>원</small></s></span>
+                      </p>
+                      <p>
+                        숙박 <span class="coupon">쿠폰할인가</span>
+                        <span class="price">1,969,000<small>원</small></span>
+                      </p>
+                    </div>
+                  </div>
+                  <button class="my-4 btn btn-block btn-md btn-navy">예약하기</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- 객실상품 2 -->
+      <section class="container-fluid bg-grey half mt-4 pb-3">
+        <article class="container px-0">
+          <div class="card card-room">
+            <div class="slide-wrapper">
+              <!-- Carousel -->
+              <div class="owl-carousel owl-theme" id="roomPhoto2">
+                <div class="item">
+                  <div class="thumb" style="background-image: url('../images/room@3x.png');">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb" style="background-image: url('../images/room@3x.png');">
+                  </div>
+                </div>
+              </div>
+              <!--// Carousel -->
+              <div class="badge badge-custom badge-custom-timesale">
+                <i class="icon icon-timesale icon-white icon-sm"></i>
+                <span>타임세일</span>
+              </div>
+              <span class="slider-counter" id="countRoom">1/10+</span>
+              <div class="text-bg text-bg-round">5객실 남음</div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title mt-2">
+                <div class="row">
+                  <div class="col-9 pr-0">메리어트관 제주신화월드 호텔엔리조트</div>
+                  <div class="col-7 text-right text-nowrap">
+                    <div class="btn-group">
+                      <div class="badge badge-custom badge-custom-motel"><span>데이유즈</span></div>
+                      <div class="badge badge-custom badge-custom-grade"><span>숙박</span></div>
+                    </div>
+                  </div>
+                </div>
+              </h5>
+              <div class="container px-0 mt-3">
+                <div class="row">
+                  <ul class="col-8 list list-normal">
+                    <li>객실크기 25.2 m<sup>2</sup></li>
+                    <li>침대: 더블 1개</li>
+                    <li>2인 기준/ 최대 2인</li>
+                  </ul>
+                  <div class="col-8">
+                    <div class="price-wrap">
+                      <span class="price ml-1">69,000<small>원부터~</small></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="mt-4 btn btn-md btn-block btn-outline-primary btn-more">
+                <span>3개 상품보기</span>
+                <i class="arrow arrow-down"></i>
+              </button>
+            </div>
+            <!-- 더보기 객실 1 -->
+            <div class="more-rooms">
+              <ul class="list-room">
+                <li>
+                  <div class="btn-group">
+                    <div class="badge badge-custom badge-custom-type">
+                      <span>호텔에서 결제</span>
+                    </div>
+                    <div class="badge badge-custom badge-custom-timesale">
+                      <i class="icon icon-timesale icon-white icon-sm"></i>
+                      <span>타임세일</span>
+                    </div>
+                  </div>
+                  <h5 class="heading heading-2">[20시체크인] 스탠다드 트윈 빌리지뷰 호텔앤리조트</h5>
+                  <div class="room-info">
+                    <div class="info-time">조식불포함 IN 15:00 OUT 11:00</div>
+                    <b class="mt-3 d-block">기본정보</b>
+                    <ul class="mt-2 list list-normal">
+                      <li>룸 온리상품</li>
+                      <li>20시이후 체크인 상품</li>
+                    </ul>
+                    <div class="price-wrap">
+                      <p>
+                        숙박 <span class="coupon">쿠폰할인가</span>
+                        <s class="price-old">149,000<small>원</small></s>
+                      </p>
+                      <p>
+                      <div class="badge badge-custom badge-custom-dayuse">
+                        <span>데이유즈</span>
+                      </div>
+                      <span class="price">1,969,000<small>원</small></span>
+                      </p>
+                    </div>
+                  </div>
+                  <button class="my-4 btn btn-block btn-md btn-navy">예약하기</button>
+                </li>
+                <li>
+                  <div class="btn-group">
+                    <div class="badge badge-custom badge-custom-type">
+                      <span>호텔에서 결제</span>
+                    </div>
+                    <div class="badge badge-custom badge-custom-timesale">
+                      <i class="icon icon-timesale icon-white icon-sm"></i>
+                      <span>타임세일</span>
+                    </div>
+                  </div>
+                  <h5 class="heading heading-2">[20시체크인] 스탠다드 트윈 빌리지뷰 호텔앤리조트</h5>
+                  <div class="room-info">
+                    <div class="info-time">조식불포함 IN 15:00 OUT 11:00</div>
+                    <b class="mt-3 d-block">기본정보</b>
+                    <ul class="mt-2 list list-normal">
+                      <li>룸 온리상품</li>
+                      <li>20시이후 체크인 상품</li>
+                    </ul>
+                    <div class="price-wrap">
+                      <p>
+                        <span class="price-old"><s>149,000<small>원</small></s></span>
+                      </p>
+                      <p>
+                        숙박 <span class="coupon">쿠폰할인가</span>
+                        <span class="price">1,969,000<small>원</small></span>
+                      </p>
+                    </div>
+                  </div>
+                  <button class="my-4 btn btn-block btn-md btn-navy">예약하기</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- 객실상품 더보기 -->
+      <div class="container-fluid pt-4">
+        <button class="mt-2 btn btn-md btn-block btn-moreblue">객실상품 더보기</button>
+      </div>
+
+      <hr class="divider-h mt-5">
+
+      <!-- 정보 공지,주차 등 -->
+      <section class="container-fluid">
+        <div class="container notice-info">
+          <h5>공지사항</h5>
+          <ul class="list list-normal">
+            <li>루프탑&스낵바는 코로나19로 인하여 한시적으로 중단합니다.</li>
+            <li>예약자 1인당 최대 4개객실까지 예약가능</li>
+            <li>성함 연락처 기입 안할시 입실이 불가합니다.</li>
+          </ul>
+          <h5>주차안내</h5>
+          <ul class="list list-normal">
+            <li>무료주차 가능합니다.</li>
+            <li>전기차 충전소가 있습니다.</li>
+          </ul>
+          <h5>객실내시설</h5>
+          <h5>추가요금</h5>
+          <ul class="list list-normal">
+            <li>침대추가 20,000원</li>
+            <li>침구류 20,000원</li>
+            <li>인원추가비용 성인 15,000원 (만7세미만무료)</li>
+            <li>체크아웃연장 시간당 20,000원</li>
+          </ul>
+          <h5>조식정보</h5>
+          <ul class="list list-normal">
+            <li>피스트(41층) 07:00-10:30 /메뉴 뷔페</li>
+            <li>유아(-6세미만) 무료</li>
+            <li>소아(13세미만) 13,750원</li>
+            <li>성인(14세이상) 27,500원</li>
+          </ul>
+          <p class="remark mt-2">* 조식문의는 호텔에 문의바랍니다.</p>
+        </div>
+      </section>
+
+      <!-- 부대시설 기타 -->
+      <section class="container-fluid bg-grey">
+        <div class="container notice-info">
+          <h5>부대시설</h5>
+          <ul class="list list-normal">
+            <li>피트니스(10층) 투숙객무료, 24시간이용가능</li>
+            <li>사우나(9층) 투숙객무료, 24시간이용시간</li>
+            <li>
+              2층 엔터테인먼트센터<br>
+              (당구장,탁구장,사격장,골프연습장,코인노래방)
+              <button class="btn btn-sm btn-more-inline btn-outline-primary ml-2">더보기 +</button>
+            </li>
+          </ul>
+          <h5>취소환불</h5>
+          <ul class="list list-normal">
+            <li>체크인 3일전 100% 환불</li>
+            <li>체크인 2일전 50% 환불</li>
+            <li>체크인 당일 환불불가</li>
+          </ul>
+          <h5>기타사항</h5>
+          <ul class="list list-normal">
+            <li>체크인시 보증금을 요구할 수 있으나 퇴실시 전액 환불됩니다.</li>
+            <li>최대인원 초과시 입실불가입니다.</li>
+            <li>미성년자는 보호자 동반없이 투숙이 불가합니다.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 지도 위치 -->
+      <section class="container-fluid px-0">
+        <div class="map-api-container">
+          <!-- 지도 API -->
+          <h1>지도영역</h1>
+          <div class="container btn-wrap">
+            <button class="btn btn-xs white text-primary">
+              <i class="icon icon-sm icon-copy icon-fb"></i>
+              <span>주소복사</span>
+            </button>
+            <button class="btn btn-xs btn-secondary">
+              <i class="icon icon-sm icon-pin icon-white"></i>
+              <span>지도보기</span>
+            </button>
+          </div>
+        </div>
+        <div class="container mt-3 map-address">
+          인천광역시 중구 영종해안남로 321번길 208(운서동인천광역시 중구 영종
+          해안남로 321번길 208(운서동)
+        </div>
+      </section>
+
+      <hr class="divider-h my-5">
+
+      <!-- 주변 추천 숙소 -->
+      <section class="container px-0">
+        <h4 class="container heading-bold mb-3">주변추천숙소</h4>
+        <div class="owl-carousel owl-theme" id="closeHotel">
+          <div class="item">
+            <a href="#">
+              <div class="card card-recommend">
+                <picture>
+                  <source srcset="../images/local.png" media="(max-width: 400px)">
+                  <source srcset="../images/local@2x.png">
+                  <img src="../images/local.png" alt="벤티모호텔제주 사진">
+                </picture>
+                <div class="card-body">
+                  <h5 class="card-title strcut">
+                    제주 | 벤티모호텔제쥬
+                  </h5>
+                  <div class="price-wrap">
+                    <span class="price bold ml-1">69,000<small>원</small></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="card card-recommend">
+                <picture>
+                  <source srcset="../images/local2.png" media="(max-width: 400px)">
+                  <source srcset="../images/local2@2x.png">
+                  <img src="../images/local2.png" alt="벤티모호텔제주 사진">
+                </picture>
+                <div class="card-body">
+                  <h5 class="card-title strcut">
+                    제주 | 벤티모호텔제쥬티모호텔제쥬
+                  </h5>
+                  <div class="price-wrap">
+                    <span class="price bold ml-1">69,000<small>원</small></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="card card-recommend">
+                <picture>
+                  <source srcset="../images/local3.png" media="(max-width: 400px)">
+                  <source srcset="../images/local3@2x.png">
+                  <img src="../images/local3.png" alt="벤티모호텔제주 사진">
+                </picture>
+                <div class="card-body">
+                  <h5 class="card-title strcut">
+                    선라스테이 서대문
+                  </h5>
+                  <div class="price-wrap">
+                    <span class="price bold ml-1">69,000<small>원</small></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="card card-recommend">
+                <picture>
+                  <source srcset="../images/local3.png" media="(max-width: 400px)">
+                  <source srcset="../images/local3@2x.png">
+                  <img src="../images/local3.png" alt="벤티모호텔제주 사진">
+                </picture>
+                <div class="card-body">
+                  <h5 class="card-title strcut">
+                    선라스테이 서대문
+                  </h5>
+                  <div class="price-wrap">
+                    <span class="price bold ml-1">69,000<small>원</small></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 무엇이든 물어보세요 -->
+      <section class="container-fluid mt-4 footer-qa">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-16 px-0 px-sm-3 text-center">
+              <h4 class="heading heading-sb">무엇이든 물어보세요!</h4>
+              <p class="content">저희 고객지원팀이 친절하고 빠르게 답변드립니다.</p>
+              <div class="on-time">
+                <p>월 ~ 금 09 : 00 ~ 18 : 00</p>
+                <p>토요일 & 일요일 & 공휴일: 휴무</p>
+                <blockquote>(점심시간 11 : 30 ~ 13 : 00)</blockquote>
+              </div>
+              <button class="btn btn-lg btn-block btn-kakao">
+                <i class="icon icon-kakao icon-md"></i>
+                카카오 1:1 상담 문의하기
+              </button>
+            </div>
+            <div class="col-16 px-0 px-sm-3 mt-4 text-right">
+              <button class="btn btn-sm btn-light move-top">
+                <i class="arrow arrow-up arrow-bold arrow-black"></i>
+                <span>맨위로</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="container footer-copy">
+        <div class="row">
+          <div class="col">
+            <p>(주)호텔엔조이</p>
+            <p>대표이사: 강경원 | 서울 강서구 마곡동로 55 마커스빌딩 10층</p>
+            <p>contact@hotelnjoy.com | 1566-3655</p>
+          </div>
+        </div>
+      </section> -->
+    </main>
+
+    <footer class="footer fixed-bottom">
+  <div class="container py-3">
+    <ul class="nav">
+      <li>
+        <a href="#" class="active">
+          <i class="icon icon-nav icon-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-location"></i>
+          <span>내주변</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-wish"></i>
+          <span>관심숙소</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-mypage"></i>
+          <span>마이페이지</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-kakao"></i>
+          <span>카카오상담</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+  </div>
+
+  <script>
+    // Video.js Options
+    var player = videojs('top-video', {
+      preload: true,
+      controlBar: {
+        playToggle: false,
+        captionsButton: false,
+        chaptersButton: false,
+        subtitlesButton: false,
+        remainingTimeDisplay: false,
+        progressControl: {
+          seekBar: false
+        },
+        fullscreenToggle: false,
+        playbackRateMenuButton: false,
+      },
+    });
+
+    // Top Detail Carousel
+    $("#productDetail").owlCarousel({
+      items: 1,
+      loop: true,
+      dots: false,
+      margin: 10,
+      onInitialized: counter,
+      onChanged: counter,
+      // responsiveClass: true,
+      // responsive: {
+      //   0: {
+      //     items: 1,
+      //   },
+      //   600: {
+      //     items: 2,
+      //   },
+      //   1000: {
+      //     items: 2,
+      //   }
+      // }
+    });
+    function counter(event) {
+      if (!event.namespace) {
+        return;
+      }
+      var slides = event.relatedTarget;
+      $('.slider-counter').text(slides.relative(slides.current()) + 1 + '/' + slides.items().length);
+    }
+
+    // Carousel - Review 
+    $("#review").owlCarousel({
+      items: 1.4,
+      dots: false,
+      margin: 15,
+      stagePadding: 20,
+      autoWidth: false, // true 시 margin 옵션 고정값. false는 유동
+      merge: true,  // items가 소수점 단위일 경우 true
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1.4,
+        },
+        600: {
+          items: 2.4,
+        },
+        1000: {
+          items: 3.4,
+          loop: false
+        }
+      }
+    });
+
+    // Room Photo
+    $("#roomPhoto").owlCarousel({
+      dots: false,
+      onInitialized: roomCounter,
+      onChanged: roomCounter,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        1000: {
+          items: 2,
+          loop: false
+        }
+      }
+    });
+    function roomCounter(event) {
+      if (!event.namespace) {
+        return;
+      }
+      var slides = event.relatedTarget;
+      $('#countRoom').text(slides.relative(slides.current()) + 1 + '/' + slides.items().length);
+    }
+
+    $("#roomPhoto2").owlCarousel({
+      dots: false,
+      onInitialized: roomCounter2,
+      onChanged: roomCounter2,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        1000: {
+          items: 2,
+          loop: false
+        }
+      }
+    });
+    function roomCounter2(event) {
+      if (!event.namespace) {
+        return;
+      }
+      var slides = event.relatedTarget;
+      $('#countRoom2').text(slides.relative(slides.current()) + 1 + '/' + slides.items().length);
+    }
+
+    // 주변추천숙소
+    $("#closeHotel").owlCarousel({
+      items: 2.3,
+      dots: false,
+      margin: 15,
+      stagePadding: 20,
+      autoWidth: false, // true 시 margin 옵션 고정값. false는 유동
+      // autoHeight: false,
+      merge: true,  // items가 소수점 단위일 경우 true
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 2.3,
+        },
+        600: {
+          items: 3,
+        },
+        1000: {
+          items: 4,
+          loop: false
+        }
+      }
+    });
+
+    // 객실 더보기
+    $('.btn-more').on('click', function () {
+      $(this).parent('.card-body').next('.more-rooms').toggleClass('show');
+      $(this).find('.arrow').toggleClass('arrow-down arrow-up');
+    })
+
+    // 상단으로 이동
+    $('.move-top').on('click', function () {
+      $('html, body').animate({ scrollTop: 0 }, 500);
+      return false;
+    })
+
+  </script>
+<script src=".././js/index.bundle.js?49a85ad49723ea7f9956"></script></body>
+
+</html>

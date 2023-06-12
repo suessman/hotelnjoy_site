@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>호텔엔조이</title>
+    <meta name="description" content="">
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+<!-- favicon.ico in the root directory -->
+<link rel="apple-touch-icon" href="favicon.ico">
+
+<meta name="theme-color" content="#3d55dc">
+
+<!-- owl carousel -->
+<link rel="stylesheet" href="../css/owl.carousel.min.css">
+<link rel="stylesheet" href="../css/owl.theme.default.min.css">
+<!-- Fantasy -->
+<link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+<link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- owl carousel -->
+<script src="../js/owl.carousel.min.js"></script>
+<!--Video.js -->
+<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+
+<link href=".././css/styles.css?49a85ad49723ea7f9956" rel="stylesheet"></head>
+
+<body>
+
+    <!--[if IE]>
+<div class="p-3 bg-light">
+  <div class="container">
+    <p class="mb-0 browserupgrade">
+      You are using an <strong>outdated</strong> browser.
+      Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+    </p>
+  </div>
+</div>
+<![endif]-->
+
+
+    <div class="d-flex flex-column h-100">
+        <header class="header header-title fixed-top border-bottom">
+            <div class="container px-0">
+                <nav class="navbar">
+                    <div>
+                        <a href="/index.html" class="btn">
+                            <i class="icon icon-back icon-md"></i>
+                            <span class="sr-only">뒤로가기</span>
+                        </a>
+                        <h1>결제하기</h1>
+                    </div>
+                    <div>
+                        <a href="#;" class="btn">
+                            <i class="icon icon-headphone"></i>
+                            <span class="sr-only">전화하기</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="d-flex flex-column  ui-nav ui-header">
+            <section class="container px-0 px-sm-3">
+                <div class="title-header title-header-light heading heading-4">
+                    예약 정보
+                </div>
+                <div class="card-body-container">
+                    <div class="badge badge-custom badge-custom-timesale">
+                        <i class="icon icon-check icon-white icon-sm"></i>
+                        <span>확정예약</span>
+                    </div>
+                    <span class="heading-bold">호텔 스퀘어 바이세빌스</span>
+                    <div class="mt-1">
+                        <span class="text-french-blue">모바일특가:</span>
+                        <span>[ROOM ONLY PROMOTION] HILTON FLOOR</span>
+                    </div>
+
+                    <!-- 체크인 체크아웃 -->
+                    <div class="checkinout-area d-flex">
+                        <div class="checkin d-flex align-items-end">
+                            <div class="text-center">
+                                <label for="">체크인</label>
+                                <input type="text" value="10.10(월)" class="form-control bg-wf date" readonly>
+                            </div>
+                            <div>
+                                <input type="text" value="15시" class="form-control bg-wf time" readonly>
+                            </div>
+                        </div>
+
+                        <div class="checkout d-flex align-items-end">
+                            <div class="text-center">
+                                <label for="">체크아웃</label>
+                                <input type="text" value="10.10(월)" class="form-control bg-wf date" readonly>
+                            </div>
+                            <div>
+                                <input type="text" value="15시" class="form-control bg-wf time" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 이용시간선택 -->
+                    <div class="select-time-section">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="heading heading-3">이용시간 선택</span>
+                            <span class="heading heading-5"><span class="text-pastel-red">4</span>시간 이용</span>
+                        </div>
+                        <!-- 이용시간 -->
+                        <div class="time-group">
+                            <span class="time-list">11시</span>
+                            <span class="time-list">12시</span>
+                            <span class="time-list">13시</span>
+                            <span class="time-list">14시</span>
+                            <span class="time-list">15시</span>
+                            <span class="time-list">16시</span>
+                            <span class="time-list">17시</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="container px-0 px-sm-3">
+                <div class="title-header title-header-light between">
+                    <span class="heading heading-4">예약자 정보</span>
+                    <a href="" class="heading-5">로그인해주세요<i class="icon icon-right icon-sm icon-cgt"></i></a>
+                </div>
+                <div class="card-body-container">
+                    <div class="form-group">
+                        <label for="" class="underline-input-label">예약자*</label>
+                        <input type="text" class="form-control underline" placeholder="이름을 입력해주세요.">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="underline-input-label">휴대폰*</label>
+                        <input type="text" class="form-control underline" placeholder="휴대폰번호를 입력해주세요.">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="underline-input-label">이메일</label>
+                        <input type="text" class="form-control underline" placeholder="이메일을 입력해주세요.">
+                    </div>
+
+                    <div class="custom-control custom-checkbox mt-1">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1" name="example2" value="">
+                        <label class="custom-control-label heading heading-4" for="customCheck1">투숙자가 다를경우 체크해주세요</label>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="" class="underline-input-label">요청사항</label>
+                        <input type="text" class="form-control bg-ws mt-2">
+                    </div>
+                    <p class="heading-5 text-pinkish-grey-nine">*작성하신 요청사항은 호텔의 사정에 따라 반영이 안될수도 있습니다.</p>
+                </div>
+            </section>
+
+            <section class="container px-0 px-sm-3">
+                <div class="title-header title-header-light between">
+                    <span class="heading heading-4">할인 정보</span>
+                    <a href="" class="heading-5">로그인해주세요<i class="icon icon-right icon-sm"></i></a>
+                </div>
+                <div class="card-body-container">
+                    <p class="heading-5 text-pinkish-grey-nine">할인선택은 중복사용이 불가합니다.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="heading heading-4">할인쿠폰 사용</span>
+                        <div class="d-flex">
+                            <span class="coupon-count heading heading-4">적용가능 1매</span>
+                            <button type="button" class="coupon-popup-btn" data-toggle="modal" data-target="#couponList">
+                                <i class="icon icon-sm icon-right-grey icon-pgn"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="" class="underline-input-label heading heading-4">할인코드 사용</label>
+
+                        <div class="form-between">
+                            <input type="text" class="form-control bg-ws fix-input">
+                            <button type="button" class="btn btn-navy fix-btn">
+                                확인
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container px-0 px-sm-3">
+                <div class="title-header title-header-light between">
+                    <span class="heading heading-4">포인트</span>
+                </div>
+                <div class="card-body-container">
+                    <div class="form-group">
+                        <label for="" class="underline-input-label heading heading-4">포인트 사용</label>
+
+                        <div class="form-between mt-3">
+                            <input type="text" class="form-control bg-ws fix-input">
+                            <button type="button" class="btn fix-btn-outline">
+                                전액사용
+                            </button>
+                        </div>
+                        <div class="text-pinkish-grey-nine sm">사용가능 포인트: 0원</div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="" class="underline-input-label heading heading-4">캐쉬 사용</label>
+
+                        <div class="form-between">
+                            <input type="text" class="form-control bg-ws fix-input">
+                            <button type="button" class="btn fix-btn-outline">
+                                확인
+                            </button>
+                        </div>
+                        <div class="text-pinkish-grey-nine sm">사용가능 캐쉬: 0원</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- coupon list -->
+        <div class="modal fade" id="couponList" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog coupon-modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon icon-delete icon-gb"></i>
+                    </button>
+                    <div class="modal-header">
+                        <div>
+                            <h5 class="modal-title text-center" id="couponListLabel">사용 가능한 쿠폰</h5>
+                            <p class="m-0">아래의 할인 받을 쿠폰을 선택해 주세요.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <hr class="grey" />
+                    </div>
+                    <div class="modal-body">
+                        <ul class="coupon-group">
+                            <li class="coupon-list">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="couponlist1" name="coupon" value="">
+                                    <label class="custom-control-label" for="couponlist1">할인쿠폰 적용 안 함</label>
+                                </div>
+                            </li>
+                            <li class="coupon-list">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="couponlist2" name="coupon" value="">
+                                    <label class="custom-control-label" for="couponlist2">
+                                        <div>반짝 할인 5000원 할인</div>
+                                        <div class="condition">10만원 이상 결제시</div>
+                                        <div class="term">
+                                            <span>예약기간:</span>
+                                            <span>2021년 3월 11일 ~ 2021년 3월15일</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="coupon-list">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="couponlist3" name="coupon" value="">
+                                    <label class="custom-control-label" for="couponlist3">
+                                        <div>50% 할인</div>
+                                        <div class="condition">베이튼 서울 동대문(최대1만원)</div>
+                                        <div class="term">
+                                            2021년 3월 11일 ~ 2021년 3월15일
+                                        </div>
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="coupon-list">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="couponlist4" name="coupon" value="">
+                                    <label class="custom-control-label" for="couponlist4">
+                                        <div>APP전용 5000원 즉시할인</div>
+                                        <div class="condition">보리호텔 강남 할인 쿠폰</div>
+                                        <div class="term">
+                                            10만원 이상 결제 시
+                                        </div>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 쿠폰팩 할인 -->
+                        <div class="discount-coupon">
+                            <div>할인 쿠폰팩</div>
+                            <ul class="coupon-group">
+                                <li class="coupon-list two">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="couponlist5" name="coupon" value="">
+                                        <label class="custom-control-label" for="couponlist5">3월 쿠폰팩 할인</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer fixed-bottom">
+  <div class="container py-3">
+    <ul class="nav">
+      <li>
+        <a href="#" class="active">
+          <i class="icon icon-nav icon-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-location"></i>
+          <span>내주변</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-wish"></i>
+          <span>관심숙소</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-mypage"></i>
+          <span>마이페이지</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-kakao"></i>
+          <span>카카오상담</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+    </div>
+    <script>
+
+        //add border, checked element
+        $('input[name=coupon]').change(function () {
+            $('.coupon-list').removeClass('selected');
+
+            if ($("input:radio[name=coupon]").is(":checked")) {
+                $(this).parents('.coupon-list').addClass('selected');
+            }
+        })
+
+
+
+    </script>
+
+<script src=".././js/index.bundle.js?49a85ad49723ea7f9956"></script></body>
+
+</html>

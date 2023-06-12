@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="65.103" viewBox="0 0 64 65.103">
+    <defs>
+        <style>
+            .cls-3{fill:#333}
+        </style>
+    </defs>
+    <g id="hotel_icon" transform="translate(-.465 .267)">
+        <path id="사각형_310" fill="rgba(255,255,255,0)" d="M0 0H64V65.103H0z" transform="translate(.465 -.267)"/>
+        <path id="사각형_311" fill="#3d55dc" d="M0 0H16V18H0z" transform="translate(24.465 42.836)"/>
+        <path id="패스_108" d="M92.355 55.754V11.321h-4.626V3.805H76.7V0h-3.47v3.805H62.206v7.515h-4.625v44.434h-6.293v3.47h47.359v-3.47zM65.676 7.275h18.583v4.045H65.676zm16.268 48.479H76.7V43.073h5.241zm-8.712 0h-5.241V43.073h5.241zm12.182 0V39.6H64.521v16.154h-3.47V14.791h27.833v40.963z" class="cls-3" transform="translate(-42.702 2.186)"/>
+        <path id="패스_109" d="M165.688 158.2h3.47v3.47h-3.47z" class="cls-3" transform="translate(-143.869 -137.719)"/>
+        <path id="패스_110" d="M316.312 158.2h3.47v3.47h-3.47z" class="cls-3" transform="translate(-277.07 -137.719)"/>
+        <path id="패스_111" d="M241 158.2h3.47v3.47H241z" class="cls-3" transform="translate(-210.47 -137.719)"/>
+        <path id="패스_112" d="M165.688 218.541h3.47v3.47h-3.47z" class="cls-3" transform="translate(-143.869 -191.076)"/>
+        <path id="패스_113" d="M316.312 218.541h3.47v3.47h-3.47z" class="cls-3" transform="translate(-277.07 -191.076)"/>
+        <path id="패스_114" d="M241 218.541h3.47v3.47H241z" class="cls-3" transform="translate(-210.47 -191.076)"/>
+        <path id="패스_115" d="M165.688 278.878h3.47v3.47h-3.47z" class="cls-3" transform="translate(-143.869 -244.433)"/>
+        <path id="패스_116" d="M316.312 278.878h3.47v3.47h-3.47z" class="cls-3" transform="translate(-277.07 -244.433)"/>
+        <path id="패스_117" d="M241 278.878h3.47v3.47H241z" class="cls-3" transform="translate(-210.47 -244.433)"/>
+    </g>
+</svg>

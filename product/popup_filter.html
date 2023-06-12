@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>호텔엔조이 - 정렬/필터</title>
+  <meta name="description" content="">
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+<!-- favicon.ico in the root directory -->
+<link rel="apple-touch-icon" href="favicon.ico">
+
+<meta name="theme-color" content="#3d55dc">
+
+<!-- owl carousel -->
+<link rel="stylesheet" href="../css/owl.carousel.min.css">
+<link rel="stylesheet" href="../css/owl.theme.default.min.css">
+<!-- Fantasy -->
+<link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+<link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- owl carousel -->
+<script src="../js/owl.carousel.min.js"></script>
+<!--Video.js -->
+<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+
+<link href=".././css/styles.css?49a85ad49723ea7f9956" rel="stylesheet"></head>
+
+<body>
+
+  <!--[if IE]>
+<div class="p-3 bg-light">
+  <div class="container">
+    <p class="mb-0 browserupgrade">
+      You are using an <strong>outdated</strong> browser.
+      Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+    </p>
+  </div>
+</div>
+<![endif]-->
+
+
+  <div class="d-flex flex-column">
+
+    <main class="d-flex flex-column ui-header">
+
+      <header class="container-fluid head-wrap fixed-top border-bottom">
+        <h1 class="heading-close mb-0">정렬/필터 적용하기</h1>
+        <button class="btn btn-sm button-close">
+          <i class="icon icon-close icon-ml"></i>
+          <span class="sr-only">닫기</span>
+        </button>
+      </header>
+
+      <div class="container-fluid px-0 my-4 search-filter">
+
+        <!-- 순서 -->
+        <section class="container">
+          <h2 class="heading-sb">
+            <span>숙소 순서</span>
+            <div class="seleted-option">
+              <img src="../images/ic_popularity@3x.png" alt="인기순">
+            </div>
+          </h2>
+          <ul class="list-filter">
+            <li>
+              <input type="radio" name="order" id="order1">
+              <label for="order1" class="filter filter-icon-text">
+                <img src="../images/ic_popularity@3x.png" alt="인기순">
+              </label>
+              <p class="text-center">인기순</p>
+            </li>
+            <li>
+              <input type="radio" name="order" id="order2">
+              <label for="order2" class="filter filter-icon-text">
+                <img class="w-30" src="../images/ic_distance@3x.png" alt="거리순">
+              </label>
+              <p class="text-center">거리순</p>
+            </li>
+            <li>
+              <input type="radio" name="order" id="order3">
+              <label for="order3" class="filter filter-icon-text">
+                <img class="" src="../images/ic_low_price@3x.png" alt="낮은가격순">
+              </label>
+              <p class="text-center">낮은가격순</p>
+            </li>
+            <li>
+              <input type="radio" name="order" id="order4">
+              <label for="order4" class="filter filter-icon-text">
+                <img class="" src="../images/ic_high_price@3x.png" alt="높은가격순">
+              </label>
+              <p class="text-center">높은가격순</p>
+            </li>
+            <li>
+              <input type="radio" name="order" id="order5">
+              <label for="order5" class="filter filter-icon-text">
+                <img class="" src="../images/ic_review@3x.png" alt="후기순">
+              </label>
+              <p class="text-center">후기순</p>
+            </li>
+          </ul>
+        </section>
+
+        <hr class="divider-h">
+
+        <!-- 등급 -->
+        <section class="container pt-3">
+          <h2 class="heading-sb">
+            <span>등급</span>
+            <div class="seleted-option">
+              <img src="../images/ic_rating5@3x.png" alt="5성급">
+            </div>
+          </h2>
+          <ul class="list-filter">
+            <li>
+              <input type="checkbox" name="grade" id="grade1">
+              <label for="grade1" class="filter filter-icon-text">
+                <img class="w-60" src="../images/ic_rating5@3x.png" alt="5성급">
+              </label>
+              <p class="text-center">5성급</p>
+            </li>
+            <li>
+              <input type="checkbox" name="grade" id="grade2">
+              <label for="grade2" class="filter filter-icon-text">
+                <img src="../images/ic_rating4@3x.png" alt="4성급">
+              </label>
+              <p class="text-center">4성급</p>
+            </li>
+            <li>
+              <input type="checkbox" name="grade" id="grade3">
+              <label for="grade3" class="filter filter-icon-text">
+                <img class="w-60" src="../images/ic_rating3@3x.png" alt="3성급">
+              </label>
+              <p class="text-center">3성급</p>
+            </li>
+            <li>
+              <input type="checkbox" name="grade" id="grade4">
+              <label for="grade4" class="filter filter-icon-text">
+                <img class="w-40" src="../images/ic_rating2@3x.png" alt="2성급">
+              </label>
+              <p class="text-center">2성급</p>
+            </li>
+            <li>
+              <input type="checkbox" name="grade" id="grade5">
+              <label for="grade5" class="filter filter-icon-text">
+                <img class="w-20" src="../images/ic_rating1@3x.png" alt="1성급">
+              </label>
+              <p class="text-center">1성급</p>
+            </li>
+          </ul>
+        </section>
+
+        <hr class="divider-h">
+
+        <!-- 베드타입 -->
+        <section class="container pt-3">
+          <h2 class="heading-sb">
+            <span>베드 타입</span>
+            <div class="seleted-option">
+              <img src="../images/ic_bedtype_all@3x.png" alt="전체">
+            </div>
+          </h2>
+          <ul class="list-filter">
+            <li>
+              <input type="checkbox" name="bed" id="bed1">
+              <label for="bed1" class="filter filter-icon-text">
+                <img src="../images/ic_bedtype_all@3x.png" alt="전체">
+              </label>
+              <p class="text-center">전체</p>
+            </li>
+            <li>
+              <input type="checkbox" name="bed" id="bed2">
+              <label for="bed2" class="filter filter-icon-text">
+                <img src="../images/ic_bedtype_single@3x.png" alt="싱글">
+              </label>
+              <p class="text-center">싱글</p>
+            </li>
+            <li>
+              <input type="checkbox" name="bed" id="bed3">
+              <label for="bed3" class="filter filter-icon-text">
+                <img class="w-60" src="../images/ic_bedtype_double@3x.png" alt="더블">
+              </label>
+              <p class="text-center">더블</p>
+            </li>
+            <li>
+              <input type="checkbox" name="bed" id="bed4">
+              <label for="bed4" class="filter filter-icon-text">
+                <img class="w-60" src="../images/ic_bedtype_twin@3x.png" alt="트윈">
+              </label>
+              <p class="text-center">트윈</p>
+            </li>
+            <li>
+              <input type="checkbox" name="bed" id="bed5">
+              <label for="bed5" class="filter filter-icon-text">
+                <img class="w-60" src="../images/ic_bedtype_triple@3x.png" alt="트리플">
+              </label>
+              <p class="text-center">트리플</p>
+            </li>
+            <li>
+              <input type="checkbox" name="bed" id="bed6">
+              <label for="bed6" class="filter filter-icon-text">
+                <img class="w-50" src="../images/ic_bedtype_ondol@3x.png" alt="온돌">
+              </label>
+              <p class="text-center">온돌</p>
+            </li>
+            <li>
+              <input type="checkbox" name="bed" id="bed7">
+              <label for="bed7" class="filter filter-icon-text">
+                <img class="w-50" src="../images/ic_bedtype_double_two@3x.png" alt="더블더블">
+              </label>
+              <p class="text-center">더블더블</p>
+            </li>
+            <li>
+              <input type="checkbox" name="bed" id="bed8">
+              <label for="bed8" class="filter filter-icon-text">
+                <img class="w-50" src="../images/ic_bedtype_double_single@3x.png" alt="더블싱글">
+              </label>
+              <p class="text-center">더블싱글</p>
+            </li>
+            <li>
+              <input type="checkbox" name="bed" id="bed9">
+              <label for="bed9" class="filter filter-icon-text">
+                <img class="w-50" src="../images/ic_bedtype_livingroom@3x.png" alt="거실형">
+              </label>
+              <p class="text-center">거실형</p>
+            </li>
+            <li>
+              <input type="checkbox" name="bed" id="bed10">
+              <label for="bed10" class="filter filter-icon-text">
+                <img src="../images/ic_bedtype_check@3x.png" alt="현지배정">
+              </label>
+              <p class="text-center">현지배정</p>
+            </li>
+          </ul>
+        </section>
+
+        <hr class="divider-h">
+
+        <!-- 부대시설 -->
+        <section class="container pt-3">
+          <h2 class="heading-sb">
+            <span>부대 시설</span>
+            <div class="seleted-option">
+              <img src="../images/ic_fitness@3x.png" alt="피트니스">
+            </div>
+          </h2>
+          <ul class="list-filter">
+            <li>
+              <input type="checkbox" name="option" id="option1">
+              <label for="option1" class="filter filter-icon-text">
+                <img src="../images/ic_fitness@3x.png" alt="피트니스">
+              </label>
+              <p class="text-center">피트니스</p>
+            </li>
+            <li>
+              <input type="checkbox" name="option" id="option2">
+              <label for="option2" class="filter filter-icon-text">
+                <img class="w-60" src="../images/ic_outdoor_swimmingpool@3x.png" alt="실외수영장">
+              </label>
+              <p class="text-center">실외수영장</p>
+            </li>
+            <li>
+              <input type="checkbox" name="option" id="option3">
+              <label for="option3" class="filter filter-icon-text">
+                <img class="w-60" src="../images/ic_indoor_swimmingpool@3x.png" alt="실내수영장">
+              </label>
+              <p class="text-center">실내수영장</p>
+            </li>
+            <li>
+              <input type="checkbox" name="option" id="option4">
+              <label for="option4" class="filter filter-icon-text">
+                <img class="w-40" src="../images/ic_private@3x.png" alt="개별풀">
+              </label>
+              <p class="text-center">개별풀</p>
+            </li>
+            <li>
+              <input type="checkbox" name="option" id="option5">
+              <label for="option5" class="filter filter-icon-text">
+                <img class="w-40" src="../images/ic_laundry_room@3x.png" alt="세탁실">
+              </label>
+              <p class="text-center">세탁실</p>
+            </li>
+            <li>
+              <input type="checkbox" name="option" id="option6">
+              <label for="option6" class="filter filter-icon-text">
+                <img class="w-50" src="../images/ic_pc@3x.png" alt="객실내pc">
+              </label>
+              <p class="text-center">객실내PC</p>
+            </li>
+            <li>
+              <input type="checkbox" name="option" id="option7">
+              <label for="option7" class="filter filter-icon-text">
+                <img class="w-30" src="../images/ic_cooking@3x.png" alt="취사가능">
+              </label>
+              <p class="text-center">취사가능</p>
+            </li>
+            <li>
+              <input type="checkbox" name="option" id="option8">
+              <label for="option8" class="filter filter-icon-text">
+                <img class="w-40" src="../images/ic_dog@3x.png" alt="애견동반">
+              </label>
+              <p class="text-center">애견동반</p>
+            </li>
+            <li>
+              <input type="checkbox" name="option" id="option9">
+              <label for="option9" class="filter filter-icon-text">
+                <img class="w-40" src="../images/ic_convenience@3x.png" alt="편의점">
+              </label>
+              <p class="text-center">편의점</p>
+            </li>
+            <li>
+              <input type="checkbox" name="option" id="option10">
+              <label for="option10" class="filter filter-icon-text">
+                <img class="w-40" src="../images/ic_sauna@3x.png" alt="사우나">
+              </label>
+              <p class="text-center">사우나</p>
+            </li>
+          </ul>
+        </section>
+
+        <hr class="divider-h">
+
+        <!-- 가격 -->
+        <section class="container py-3 ">
+          <ul class="list-filter-radio sort-price">
+            <li>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="price" name="price_sort" value="" checked>
+                <label class="custom-control-label" for="price">전체가격</label>
+              </div>
+            </li>
+            <li>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="price2" name="price_sort" value="">
+                <label class="custom-control-label" for="price2">10만원 미만 숙소</label>
+              </div>
+            </li>
+            <li>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="price3" name="price_sort" value="">
+                <label class="custom-control-label" for="price3">10만원 이상 ~ 20만원 미민 숙소</label>
+              </div>
+            </li>
+            <li>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="price4" name="price_sort" value="">
+                <label class="custom-control-label" for="price4">20만원 이상 숙소</label>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <hr class="divider-h">
+
+        <!-- 포함옵션 -->
+        <section class="container">
+          <div class="article-switch">
+            <div>
+              <h3 class=" heading heading-3">조식 포함 숙소</h3>
+              <div class="pr-2">
+                무료 조식 상품이 있는 숙소만 보실 수<br>
+                있습니다. 지금 선택하세요.
+              </div>
+            </div>
+            <div class="switch-wrap">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="opt1">
+                <label class="custom-control-label" for="opt1">
+                  <span class="sr-only">조식포함숙소</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="article-switch">
+            <div>
+              <h3 class=" heading heading-3">판매 완료 제외</h3>
+              <div class="pr-2">
+                무료 조식 상품이 있는 숙소만 보실 수<br>
+                있습니다. 지금 선택하세요.
+              </div>
+            </div>
+            <div class="switch-wrap">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="opt2">
+                <label class="custom-control-label" for="opt2">
+                  <span class="sr-only">판매 완료 제외</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="article-switch">
+            <div>
+              <h3 class=" heading heading-3">확정 예약만 가능</h3>
+              <div class="pr-2">
+                기다릴 필요 없이 체크인 시간에 맞춰<br>
+                바로 입실 가능합니다. 지금 예약하세요.
+              </div>
+            </div>
+            <div class="switch-wrap">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="opt3">
+                <label class="custom-control-label" for="opt3">
+                  <span class="sr-only">확정 예약만 가능</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+    </main>
+
+    <footer class="footer fixed-bottom footer-button">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-4 pr-1">
+            <button class="btn btn-lg btn-block btn-info btn-reload btn-secondary">
+              <i class="icon icon-reload icon-gb"></i>초기화
+            </button>
+          </div>
+          <div class="col-12 pl-1">
+            <button class="btn btn-lg btn-block btn-primary">234개 숙소 보기</button>
+            <!-- 검색 진행 시 버튼 아래 텍스트 노출 -->
+            <!-- <button class="btn btn-lg btn-block btn-secondary">필터 검색 중...</button> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+<script src=".././js/index.bundle.js?49a85ad49723ea7f9956"></script></body>
+
+</html>

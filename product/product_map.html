@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>호텔엔조이 - 지도 검색</title>
+  <meta name="description" content="">
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+<!-- favicon.ico in the root directory -->
+<link rel="apple-touch-icon" href="favicon.ico">
+
+<meta name="theme-color" content="#3d55dc">
+
+<!-- owl carousel -->
+<link rel="stylesheet" href="../css/owl.carousel.min.css">
+<link rel="stylesheet" href="../css/owl.theme.default.min.css">
+<!-- Fantasy -->
+<link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+<link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- owl carousel -->
+<script src="../js/owl.carousel.min.js"></script>
+<!--Video.js -->
+<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+
+<link href=".././css/styles.css?49a85ad49723ea7f9956" rel="stylesheet"></head>
+
+<body>
+
+  <!--[if IE]>
+<div class="p-3 bg-light">
+  <div class="container">
+    <p class="mb-0 browserupgrade">
+      You are using an <strong>outdated</strong> browser.
+      Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+    </p>
+  </div>
+</div>
+<![endif]-->
+
+
+  <div class="d-flex flex-column h-100">
+
+    <header class="header header-title fixed-top border-bottom">
+      <div class="container px-0">
+        <nav class="navbar">
+          <div>
+            <a href="/index.html" class="btn">
+              <i class="icon icon-back icon-md"></i>
+              <span class="sr-only">뒤로가기</span>
+            </a>
+            <h1>호텔/리조트</h1>
+          </div>
+          <div>
+            <button class="btn">
+              <i class="icon icon-close icon-ml"></i>
+              <span class="sr-only">버튼</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 검색 & tabs -->
+    <header class="container-fluid px-0 search-category map">
+      <section class="container">
+        <div class="row search-form">
+          <div class="col-8 pr-1">
+            <div class="input-group">
+              <label for="locate" class="sr-only">지역</label>
+              <i class="icon icon-search icon-md"></i>
+              <input type="text" class="form-control form-control-sp" id="locate" placeholder="서울 종로/인사동/동대문">
+            </div>
+          </div>
+          <div class="col-8 pl-1">
+            <div class="input-group">
+              <label for="range" class="sr-only">기간</label>
+              <i class="icon icon-calendar icon-md icon-gb"></i>
+              <input type="text" class="form-control form-control-sp" id="range" placeholder="03.04(월)~03.05(수)">
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="d-flex h-100 flex-column ui-nav">
+
+      <div class="container-fluid h-100 px-0 map-api-container">
+
+        <!-- 지도 API -->
+        <div class="map">
+
+          <!-- 현재위치, 확대 버튼은 API 제공 버튼 적용 -->
+
+          <!-- pin -->
+          <div class="pin" style="top: 140px; left: 140px;"></div>
+          <!-- 가격있는 pin -->
+          <div class="pin-baloon" style="top: 160px; left: 60px;">
+            119,000<small>원</small>
+          </div>
+          <!-- 가격있는 active pin -->
+          <div class="pin-baloon active" style="top: 290px; left: 220px;">
+            119,000<small>원</small>
+          </div>
+          <!-- 가격있는 active pin -->
+          <div class="pin-baloon" style="top: 320px; left: 80px;">
+            119,000<small>원</small>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 리스트 버튼 -->
+      <button class="btn btn-map_list">
+        <i class="icon icon-list"></i> 리스트
+      </button>
+      <!-- Carousel -->
+      <section class="container-fluid px-0 map-list">
+        <div class="row">
+          <div class="col-16">
+            <!-- carousel -->
+            <div class="owl-carousel owl-theme" id="mapList">
+              <!-- item -->
+              <div class="item">
+                <div class="container-fluid py-3 card-search">
+                  <div class="row">
+                    <div class="col-9 pr-0">
+                      <div class="badge badge-custom badge-custom-grade">
+                        <span>5성급</span>
+                      </div>
+                      <h2 class="heading heading-bold mt-2 mb-0 strcut">베이튼 서울 동대문</h2>
+                      <span class="map-address strcut">중구 | 동대문역사문화공원역 도보 5분</span>
+                    </div>
+                    <div class="col-7 pl-0 d-flex justify-content-end align-items-end">
+                      <div class="price-wrap">
+                        <p><s class="price-old">149,000<small>원</small></s></p>
+                        <p class="per-sale mb-0">40<small>%</small></p>
+                        <span class="price">5,969,000<small>원</small></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- // item -->
+              <!-- item -->
+              <div class="item">
+                <div class="container-fluid py-3 card-search">
+                  <div class="row">
+                    <div class="col-16">
+                      <div class="badge badge-custom badge-custom-grade">
+                        <span>5성급</span>
+                      </div>
+                    </div>
+                    <h2 class="heading heading-bold col-16 mt-2 mb-0">베이튼 서울 동대문</h2>
+                    <div class="col-8">
+                      <span class="map-address">중구</span>
+                    </div>
+                    <div class="col-8 price-wrap">
+                      <div class="price-wrap">
+                        <span class="price">1,969,000<small>원</small></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- // item -->
+              <!-- item -->
+              <div class="item">
+                <div class="container-fluid py-3 card-search">
+                  <div class="row">
+                    <div class="col-16">
+                      <div class="badge badge-custom badge-custom-grade">
+                        <span>5성급</span>
+                      </div>
+                    </div>
+                    <h2 class="heading heading-bold col-16 mt-2 mb-0">베이튼 서울 동대문</h2>
+                    <div class="col-8">
+                      <span class="map-address">중구</span>
+                    </div>
+                    <div class="col-8 price-wrap">
+                      <div class="price-wrap">
+                        <span class="price">1,969,000<small>원</small></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- // item -->
+            </div>
+            <!-- //owl -->
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="footer fixed-bottom">
+  <div class="container py-3">
+    <ul class="nav">
+      <li>
+        <a href="#" class="active">
+          <i class="icon icon-nav icon-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-location"></i>
+          <span>내주변</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-wish"></i>
+          <span>관심숙소</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-mypage"></i>
+          <span>마이페이지</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="icon icon-nav icon-kakao"></i>
+          <span>카카오상담</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+  </div>
+
+  <script>
+    // Carousel
+    $("#mapList").owlCarousel({
+      items: 1.1,
+      dots: false,
+      margin: 15,
+      stagePadding: 20,
+      autoWidth: false, // true 시 margin 옵션 고정값. false는 유동
+      merge: true,  // items가 소수점 단위일 경우 true
+    });
+
+    // 좋아요 클릭 액션
+    $('.icon-like').on('click', function () {
+      $(this).toggleClass('icon-white icon-red');
+    })
+
+  </script>
+<script src=".././js/index.bundle.js?49a85ad49723ea7f9956"></script></body>
+
+</html>

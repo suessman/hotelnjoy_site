@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+<!-- favicon.ico in the root directory -->
+<link rel="apple-touch-icon" href="favicon.ico">
+
+<meta name="theme-color" content="#3d55dc">
+
+<!-- owl carousel -->
+<link rel="stylesheet" href="/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+<!-- Fantasy -->
+<link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+<link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- owl carousel -->
+<script src="/js/owl.carousel.min.js"></script>
+<!--Video.js -->
+<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+
+  <style>
+    section {
+      padding: 20px;
+    }
+
+    .btn {
+      margin: 6px;
+    }
+
+    .form-control {
+      margin-bottom: 8px;
+    }
+  </style>
+<link href="./css/styles.css?49a85ad49723ea7f9956" rel="stylesheet"></head>
+
+<body>
+
+  <!-- 뱃지 -->
+  <section>
+    <h2>커스텀 뱃지</h2>
+    <div class="badge badge-custom badge-custom-grade">
+      <span>5성급</span>
+    </div>
+    <div class="badge badge-custom badge-custom-type">
+      <span>레지던스</span>
+    </div>
+    <div class="badge badge-custom badge-custom-pension">
+      <span>캠핑카</span>
+    </div>
+    <div class="badge badge-custom badge-custom-hanok">
+      <span>게스트하우스</span>
+    </div>
+    <div class="badge badge-custom badge-custom-motel">
+      <span>모텔</span>
+    </div>
+    <div class="badge badge-custom badge-custom-timesale">
+      <i class="icon icon-timesale icon-white icon-sm"></i>
+      <span>타임세일</span>
+    </div>
+    <div class="badge badge-custom badge-custom-dayuse">
+      <span>데이유즈</span>
+    </div>
+
+    <h2 class="mt-4">등급뱃지</h2>
+    <div class="badge-circle enjoy">VIP</div>
+    <div class="badge-circle kakao">VIP</div>
+    <div class="badge-circle naver">VIP</div>
+    <div class="badge-circle fb">VIP</div>
+  </section>
+
+  <!-- 폰트 -->
+  <section>
+    <h2>폰트</h2>
+    <p class="a1">텍스트 확인용 애플고딕</p>
+    <p class="a2">텍스트 확인용 애플고딕</p>
+    <p class="a3">텍스트 확인용 애플고딕</p>
+    <p class="a4">텍스트 확인용 애플고딕</p>
+    <p class="a5">텍스트 확인용 애플고딕</p>
+  </section>
+
+  <!-- 버튼 -->
+  <section>
+    <h2>버튼</h2>
+    <div class="container px-0 my-1">
+      <h3>- Color</h3>
+      <button class="btn btn-primary">btn-primary</button>
+      <button class="btn btn-secondary">btn-secondary</button>
+      <button class="btn btn-success">btn-success</button>
+      <button class="btn btn-danger">btn-danger</button>
+      <button class="btn btn-warning">btn-warning</button>
+      <button class="btn btn-info">btn-info 사진업로드</button>
+      <button class="btn btn-light">btn-light</button>
+      <button class="btn btn-dark thin">btn-dark 후기등록하기</button>
+    </div>
+    <div class="container px-0 my-1 mt-3">
+      <h3>- Outline</h3>
+      <button class="btn btn-outline-primary">btn-outline-primary 3개 상품보기</button>
+      <button class="btn btn-outline-secondary">btn-outline-secondary</button>
+      <button class="btn btn-block btn-lg btn-kakao">btn-kakao 카카오톡 상담</button>
+    </div>
+    <div class="container px-0 my-1 mt-3">
+      <h3>- Size</h3>
+      <button class="btn btn-primary">btn</button>
+      <button class="btn btn-sm btn-block btn-primary">btn-sm 후기등록</button>
+      <button class="btn btn-md btn-block btn-primary">btn-md</button>
+      <button class="btn btn-ml btn-block btn-primary">btn-ml</button>
+      <button class="btn btn-mxl btn-block btn-primary">btn-mxl</button>
+      <button class="btn btn-lg btn-block btn-primary">btn-lg 등록하기</button>
+      <button class="btn btn-ml btn-grey btn-block bold">btn-grey 닫기</button>
+    </div>
+    <div class="container px-0 my-1 mt-3">
+      <h3>- Font Weight</h3>
+      <button class="btn btn-md btn-info thin">thin 후기등록</button>
+      <button class="btn btn-md btn-info medium">medium 후기등록</button>
+      <button class="btn btn-md btn-info bold">bold 후기등록</button>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section>
+    <h2>Forms</h2>
+    <div class="container px-0 my-1">
+      <h3>- Size</h3>
+      <input type="text" class="form-control" placeholder="form-control">
+      <input type="text" class="form-control form-control-sm" placeholder="form-control-sm">
+      <input type="text" class="form-control form-control-md" placeholder="form-control-md">
+      <input type="text" class="form-control form-control-lg" placeholder="form-control-lg">
+      <input type="text" class="form-control form-control-xl" placeholder="form-control-xl">
+    </div>
+    <div class="container px-0 my-1 mt-4">
+      <h3>- Colors</h3>
+      <input type="text" class="form-control bg-ws" placeholder="form-control bg-ws">
+      <input type="text" class="form-control form-control-sm bg-wf" placeholder="form-control-sm bg-wf">
+      <input type="text" class="form-control form-control-md bg-ws" placeholder="form-control-md bg-ws">
+      <input type="text" class="form-control form-control-lg bg-wf" placeholder="form-control-lg bg-wf">
+      <input type="text" class="form-control form-control-xl bg-ws" placeholder="form-control-xl bg-ws">
+    </div>
+    <div class="container px-0 my-1 mt-4">
+      <h3>- Style .underline</h3>
+      <input type="text" class="form-control underline" placeholder="form-control underline">
+      <input type="text" class="form-control form-control-sm underline" placeholder="form-control-sm underline">
+      <input type="text" class="form-control form-control-md underline" placeholder="form-control-md underline">
+      <input type="text" class="form-control form-control-lg underline" placeholder="form-control-lg underline">
+      <input type="text" class="form-control form-control-xl underline" placeholder="form-control-xl underline">
+    </div>
+    <div class="container px-0 my-1 mt-4">
+      <h3>- Style .noborder</h3>
+      <input type="text" class="form-control noborder" placeholder="form-control noborder">
+      <input type="text" class="form-control form-control-sm noborder" placeholder="form-control-sm noborder">
+      <input type="text" class="form-control form-control-md noborder" placeholder="form-control-md noborder">
+      <input type="text" class="form-control form-control-lg noborder" placeholder="form-control-lg noborder">
+    </div>
+    <div class="container px-0 my-1 mt-4">
+      <h3>- Style .noborder.round</h3>
+      <input type="text" class="form-control noborder round" placeholder="form-control noborder round">
+      <input type="text" class="form-control form-control-sm noborder round" placeholder="form-control-sm noborder round">
+      <input type="text" class="form-control form-control-md noborder round" placeholder="form-control-md noborder round">
+      <input type="text" class="form-control form-control-lg noborder round" placeholder="form-control-lg noborder round">
+    </div>
+    <div class="container px-0 my-1 mt-4">
+      <h3>- Style input-group</h3>
+      <!-- Custom input-group ## inline 조합 사용시 row > col 구성 -->
+      <div class="search-quick">
+        <div class="input-group ">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              <i class="icon icon-calendar icon-ml"></i>
+            </span>
+          </div>
+          <input type="text" aria-label="기간" class="form-control form-control-md" value="03.04~03.06">
+          <input type="text" aria-label="숙박" class="form-control form-control-md right" value="99박">
+        </div>
+        <div class="input-group ">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              <i class="icon icon-user icon-ml"></i>
+            </span>
+          </div>
+          <input type="text" aria-label="선택옵션" class="form-control form-control-md" value="성인2 소아0 객실1">
+        </div>
+      </div>
+    </div>
+    <div class="container px-0 my-1 mt-4">
+      <h3>Textarea</h3>
+      <textarea class="form-control" placeholder="이용후기를 작성해주세요.
+이용후기 작성 시 부적절한 욕설, 광고가 포함된 글은 관리자에 의해 삭제될 수 있습니다."></textarea>
+    </div>
+  </section>
+
+  <!-- 아이콘 버튼 -->
+  <section>
+    <h2>아이콘 버튼</h2>
+    <button class="btn">
+      <i class="icon icon-close"></i>
+      <span class="sr-only">버튼</span>
+    </button>
+  </section>
+
+  <!-- 아이콘 -->
+  <section>
+    <h2>SVG 아이콘</h2>
+    <i class="icon icon-home"></i>
+    <i class="icon icon-location"></i>
+    <i class="icon icon-wish"></i>
+    <i class="icon icon-mypage"></i>
+    <i class="icon icon-kakao"></i>
+    <i class="icon icon-starrate"></i>
+    <i class="icon icon-arrow"></i>
+    <i class="icon icon-arrowbold"></i>
+    <i class="icon icon-back"></i>
+    <i class="icon icon-like"></i>
+    <i class="icon icon-share"></i>
+    <i class="icon icon-pin"></i>
+    <i class="icon icon-coupondown"></i>
+    <i class="icon icon-gift"></i>
+    <i class="icon icon-timesale"></i>
+    <i class="icon icon-review"></i>
+    <i class="icon icon-calendar"></i>
+    <i class="icon icon-copy"></i>
+    <i class="icon icon-close"></i>
+    <i class="icon icon-upload"></i>
+    <i class="icon icon-edit"></i>
+    <i class="icon icon-delete"></i>
+    <i class="icon icon-house"></i>
+    <i class="icon icon-search"></i>
+    <i class="icon icon-list"></i>
+    <i class="icon icon-reload"></i>
+    <i class="icon icon-closer"></i>
+    <i class="icon icon-innerclose"></i>
+    <i class="icon icon-user"></i>
+    <i class="icon icon-flight"></i>
+    <i class="icon icon-cancel"></i>
+    <i class="icon icon-calendar-check"></i>
+    <i class="icon icon-coin"></i>
+    <i class="icon icon-call"></i>
+    <i class="icon icon-headphone"></i>
+    <i class="icon icon-right"></i>
+    <i class="icon icon-right-grey"></i>
+  </section>
+
+  <!--  -->
+  <section>
+    <h2>숙소순서</h2>
+    <ul class="list-filter">
+      <li>
+        <input type="radio" name="order" id="order1">
+        <label for="order1" class="filter filter-icon-text">
+          <img src="/images/ic_popularity@3x.png" alt="인기순">
+        </label>
+        <p class="text-center">인기순</p>
+      </li>
+      <li>
+        <input type="radio" name="order" id="order2">
+        <label for="order2" class="filter filter-icon-text">
+          <img class="w-30" src="/images/ic_distance@3x.png" alt="거리순">
+        </label>
+        <p class="text-center">거리순</p>
+      </li>
+      <li>
+        <input type="radio" name="order" id="order3">
+        <label for="order3" class="filter filter-icon-text">
+          <img class="" src="/images/ic_low_price@3x.png" alt="낮은가격순">
+        </label>
+        <p class="text-center">낮은가격순</p>
+      </li>
+      <li>
+        <input type="radio" name="order" id="order4">
+        <label for="order4" class="filter filter-icon-text">
+          <img class="" src="/images/ic_high_price@3x.png" alt="높은가격순">
+        </label>
+        <p class="text-center">높은가격순</p>
+      </li>
+      <li>
+        <input type="radio" name="order" id="order5">
+        <label for="order5" class="filter filter-icon-text">
+          <img class="" src="/images/ic_review@3x.png" alt="후기순">
+        </label>
+        <p class="text-center">후기순</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>등급</h2>
+    <ul class="list-filter">
+      <li>
+        <input type="checkbox" name="grade" id="grade1">
+        <label for="grade1" class="filter filter-icon-text">
+          <img class="w-60" src="/images/ic_rating5@3x.png" alt="5성급">
+        </label>
+        <p class="text-center">5성급</p>
+      </li>
+      <li>
+        <input type="checkbox" name="grade" id="grade2">
+        <label for="grade2" class="filter filter-icon-text">
+          <img src="/images/ic_rating4@3x.png" alt="4성급">
+        </label>
+        <p class="text-center">4성급</p>
+      </li>
+      <li>
+        <input type="checkbox" name="grade" id="grade3">
+        <label for="grade3" class="filter filter-icon-text">
+          <img class="w-60" src="/images/ic_rating3@3x.png" alt="3성급">
+        </label>
+        <p class="text-center">3성급</p>
+      </li>
+      <li>
+        <input type="checkbox" name="grade" id="grade4">
+        <label for="grade4" class="filter filter-icon-text">
+          <img class="w-40" src="/images/ic_rating2@3x.png" alt="2성급">
+        </label>
+        <p class="text-center">2성급</p>
+      </li>
+      <li>
+        <input type="checkbox" name="grade" id="grade5">
+        <label for="grade5" class="filter filter-icon-text">
+          <img class="w-20" src="/images/ic_rating1@3x.png" alt="1성급">
+        </label>
+        <p class="text-center">1성급</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>베드타입</h2>
+    <ul class="list-filter">
+      <li>
+        <input type="checkbox" name="bed" id="bed1">
+        <label for="bed1" class="filter filter-icon-text">
+          <img src="/images/ic_bedtype_all@3x.png" alt="전체">
+        </label>
+        <p class="text-center">전체</p>
+      </li>
+      <li>
+        <input type="checkbox" name="bed" id="bed2">
+        <label for="bed2" class="filter filter-icon-text">
+          <img src="/images/ic_bedtype_single@3x.png" alt="싱글">
+        </label>
+        <p class="text-center">싱글</p>
+      </li>
+      <li>
+        <input type="checkbox" name="bed" id="bed3">
+        <label for="bed3" class="filter filter-icon-text">
+          <img class="w-60" src="/images/ic_bedtype_double@3x.png" alt="더블">
+        </label>
+        <p class="text-center">더블</p>
+      </li>
+      <li>
+        <input type="checkbox" name="bed" id="bed4">
+        <label for="bed4" class="filter filter-icon-text">
+          <img class="w-60" src="/images/ic_bedtype_twin@3x.png" alt="트윈">
+        </label>
+        <p class="text-center">트윈</p>
+      </li>
+      <li>
+        <input type="checkbox" name="bed" id="bed5">
+        <label for="bed5" class="filter filter-icon-text">
+          <img class="w-60" src="/images/ic_bedtype_triple@3x.png" alt="트리플">
+        </label>
+        <p class="text-center">트리플</p>
+      </li>
+      <li>
+        <input type="checkbox" name="bed" id="bed6">
+        <label for="bed6" class="filter filter-icon-text">
+          <img class="w-50" src="/images/ic_bedtype_ondol@3x.png" alt="온돌">
+        </label>
+        <p class="text-center">온돌</p>
+      </li>
+      <li>
+        <input type="checkbox" name="bed" id="bed7">
+        <label for="bed7" class="filter filter-icon-text">
+          <img class="w-50" src="/images/ic_bedtype_double_two@3x.png" alt="더블더블">
+        </label>
+        <p class="text-center">더블더블</p>
+      </li>
+      <li>
+        <input type="checkbox" name="bed" id="bed8">
+        <label for="bed8" class="filter filter-icon-text">
+          <img class="w-50" src="/images/ic_bedtype_double_single@3x.png" alt="더블싱글">
+        </label>
+        <p class="text-center">더블싱글</p>
+      </li>
+      <li>
+        <input type="checkbox" name="bed" id="bed9">
+        <label for="bed9" class="filter filter-icon-text">
+          <img class="w-50" src="/images/ic_bedtype_livingroom@3x.png" alt="거실형">
+        </label>
+        <p class="text-center">거실형</p>
+      </li>
+      <li>
+        <input type="checkbox" name="bed" id="bed10">
+        <label for="bed10" class="filter filter-icon-text">
+          <img src="/images/ic_bedtype_check@3x.png" alt="현지배정">
+        </label>
+        <p class="text-center">현지배정</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>부대시설</h2>
+    <ul class="list-filter">
+      <li>
+        <input type="checkbox" name="option" id="option1">
+        <label for="option1" class="filter filter-icon-text">
+          <img src="/images/ic_fitness@3x.png" alt="피트니스">
+        </label>
+        <p class="text-center">피트니스</p>
+      </li>
+      <li>
+        <input type="checkbox" name="option" id="option2">
+        <label for="option2" class="filter filter-icon-text">
+          <img class="w-60" src="/images/ic_outdoor_swimmingpool@3x.png" alt="실외수영장">
+        </label>
+        <p class="text-center">실외수영장</p>
+      </li>
+      <li>
+        <input type="checkbox" name="option" id="option3">
+        <label for="option3" class="filter filter-icon-text">
+          <img class="w-60" src="/images/ic_indoor_swimmingpool@3x.png" alt="실내수영장">
+        </label>
+        <p class="text-center">실내수영장</p>
+      </li>
+      <li>
+        <input type="checkbox" name="option" id="option4">
+        <label for="option4" class="filter filter-icon-text">
+          <img class="w-40" src="/images/ic_private@3x.png" alt="개별풀">
+        </label>
+        <p class="text-center">개별풀</p>
+      </li>
+      <li>
+        <input type="checkbox" name="option" id="option5">
+        <label for="option5" class="filter filter-icon-text">
+          <img class="w-40" src="/images/ic_laundry_room@3x.png" alt="세탁실">
+        </label>
+        <p class="text-center">세탁실</p>
+      </li>
+      <li>
+        <input type="checkbox" name="option" id="option6">
+        <label for="option6" class="filter filter-icon-text">
+          <img class="w-50" src="/images/ic_pc@3x.png" alt="객실내pc">
+        </label>
+        <p class="text-center">객실내PC</p>
+      </li>
+      <li>
+        <input type="checkbox" name="option" id="option7">
+        <label for="option7" class="filter filter-icon-text">
+          <img class="w-30" src="/images/ic_cooking@3x.png" alt="취사가능">
+        </label>
+        <p class="text-center">취사가능</p>
+      </li>
+      <li>
+        <input type="checkbox" name="option" id="option8">
+        <label for="option8" class="filter filter-icon-text">
+          <img class="w-40" src="/images/ic_dog@3x.png" alt="애견동반">
+        </label>
+        <p class="text-center">애견동반</p>
+      </li>
+      <li>
+        <input type="checkbox" name="option" id="option9">
+        <label for="option9" class="filter filter-icon-text">
+          <img class="w-40" src="/images/ic_convenience@3x.png" alt="편의점">
+        </label>
+        <p class="text-center">편의점</p>
+      </li>
+      <li>
+        <input type="checkbox" name="option" id="option10">
+        <label for="option10" class="filter filter-icon-text">
+          <img class="w-40" src="/images/ic_sauna@3x.png" alt="사우나">
+        </label>
+        <p class="text-center">사우나</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Switch</h2>
+    <form>
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="switch1">
+        <label class="custom-control-label switch" for="switch1"></label>
+      </div>
+    </form>
+  </section>
+
+  <section>
+    <div class="row">
+      <div class="col-8">
+        <h2>Radio</h2>
+        <form>
+          <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="customRadio1" name="example1" value="">
+            <label class="custom-control-label" for="customRadio1">Custom radio 1</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="customRadio2" name="example1" value="">
+            <label class="custom-control-label" for="customRadio2">Custom radio 2</label>
+          </div>
+        </form>
+      </div>
+      <div class="col-8">
+        <h2>Checkbox</h2>
+        <form>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1" name="example2" value="">
+            <label class="custom-control-label" for="customCheck1">Custom checkbox 1</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck2" name="example2" value="">
+            <label class="custom-control-label" for="customCheck2">Custom checkbox 2</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+<script src="./js/index.bundle.js?49a85ad49723ea7f9956"></script></body>
+
+</html>
